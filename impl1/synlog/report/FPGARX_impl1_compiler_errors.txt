@@ -1,0 +1,2 @@
+@E: CS187 :"C:\Users\alberto\Lattice\FPGARX\top.v":266:0:266:1|Expecting endmodule
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="Multiplier" module="Multiplier" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 10 16 22:27:48.627" version="4.9" type="Module" synthesis="synplify" source_format="Verilog">
+  <Package>
+		<File name="Multiplier.lpc" type="lpc" modified="2024 10 16 22:27:39.744"/>
+		<File name="Multiplier.v" type="top_level_verilog" modified="2024 10 16 22:27:39.955"/>
+		<File name="Multiplier_tmpl.v" type="template_verilog" modified="2024 10 16 22:27:39.956"/>
+		<File name="tb_Multiplier_tmpl.v" type="testbench_verilog" modified="2024 10 16 22:27:39.988"/>
+  </Package>
+</DiamondModule>

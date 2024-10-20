@@ -1,0 +1,8 @@
+i osc_clk_i
+m 0 0
+u 82 1307
+n ckid0_0 {t:MixerI.FF_39.CK} Black box on clock path
+p {t:OSCH_inst.OSC}{t:osc_clk_inferred_clock.I[0]}{t:osc_clk_inferred_clock.OUT[0]}{t:MixerI.Clock}{p:MixerI.Clock}{t:MixerI.FF_39.CK}
+e ckid0_0 {t:MixerI.FF_39.CK} FD1P3DX
+d ckid0_0 {t:OSCH_inst.OSC} OSCH Black box on clock path
+l 0 0 0 0 0

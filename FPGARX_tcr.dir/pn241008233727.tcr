@@ -1,0 +1,13 @@
+#Start recording tcl command: 10/8/2024 23:20:45
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+file copy -force -- "C:/Users/alberto/1bitSDR-master/impl1/source/top.v" "C:/Users/alberto/1bitSDR-master/impl1/source/UartRX.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/top.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source/UartRX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/test.v"
+prj_src remove "C:/Users/alberto/Lattice/FPGARX/impl1/source/top.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/top.v"
+prj_src remove "C:/Users/alberto/Lattice/FPGARX/impl1/source/UartRX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_project save
+prj_project close
+#Stop recording: 10/8/2024 23:37:27

@@ -1,0 +1,31 @@
+#Start recording tcl command: 10/18/2024 21:34:10
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src enable "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceOne
+prj_run PAR -impl impl1 -forceAll
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+#Stop recording: 10/19/2024 02:12:52

@@ -1,0 +1,10 @@
+#Start recording tcl command: 10/14/2024 00:59:00
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+file copy -force -- "C:/Users/alberto/Lattice/FPGARX/SinCos.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/SinCos.v"
+file copy -force -- "C:/Users/alberto/Lattice/FPGARX/Multiplier.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Translate -impl impl1
+#Stop recording: 10/14/2024 02:24:37

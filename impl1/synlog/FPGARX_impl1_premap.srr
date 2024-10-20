@@ -1,0 +1,177 @@
+# Sat Oct 19 22:38:24 2024
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:51:54
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\alberto\Lattice\FPGARX\sdc1.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1_scck.rpt 
+Printing clock  summary report in "C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":67:8:67:21|Tristate driver CIC_out_clkSin (in view: work.top(verilog)) on net CIC_out_clkSin (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":55:8:55:14|Tristate driver DiffOut (in view: work.top(verilog)) on net DiffOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[7] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":56:8:56:13|Tristate driver PWMOut (in view: work.top(verilog)) on net PWMOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":61:8:61:15|Tristate driver PWMOutN1 (in view: work.top(verilog)) on net PWMOutN1 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":62:8:62:15|Tristate driver PWMOutN2 (in view: work.top(verilog)) on net PWMOutN2 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":63:8:63:15|Tristate driver PWMOutN3 (in view: work.top(verilog)) on net PWMOutN3 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":64:8:64:15|Tristate driver PWMOutN4 (in view: work.top(verilog)) on net PWMOutN4 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":57:8:57:15|Tristate driver PWMOutP1 (in view: work.top(verilog)) on net PWMOutP1 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":58:8:58:15|Tristate driver PWMOutP2 (in view: work.top(verilog)) on net PWMOutP2 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":557:12:557:15|Removing sequential instance FF_9 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":560:12:560:15|Removing sequential instance FF_8 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":564:12:564:15|Removing sequential instance FF_7 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":568:12:568:15|Removing sequential instance FF_6 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":572:12:572:15|Removing sequential instance FF_5 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":576:12:576:15|Removing sequential instance FF_4 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":580:12:580:15|Removing sequential instance FF_3 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":584:12:584:15|Removing sequential instance FF_2 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":588:12:588:15|Removing sequential instance FF_1 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":592:12:592:15|Removing sequential instance FF_0 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance d_clk (in view: work.CIC_72s_4096s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":347:12:347:16|Removing sequential instance FF_19 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":350:12:350:16|Removing sequential instance FF_18 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":353:12:353:16|Removing sequential instance FF_17 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":356:12:356:16|Removing sequential instance FF_16 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":359:12:359:16|Removing sequential instance FF_15 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":362:12:362:16|Removing sequential instance FF_14 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":365:12:365:16|Removing sequential instance FF_13 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":368:12:368:16|Removing sequential instance FF_12 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":371:12:371:16|Removing sequential instance FF_11 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":374:12:374:16|Removing sequential instance FF_10 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":57:2:57:7|Removing sequential instance d_clk_tmp (in view: work.CIC_72s_4096s(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":407:12:407:16|Removing sequential instance FF_22 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":367:12:367:16|Removing sequential instance FF_32 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":371:12:371:16|Removing sequential instance FF_31 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":375:12:375:16|Removing sequential instance FF_30 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":676:14:676:26|Removing instance triglut_1_0_9 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":379:12:379:16|Removing sequential instance FF_29 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":383:12:383:16|Removing sequential instance FF_28 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":682:14:682:26|Removing instance triglut_1_0_8 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":688:14:688:26|Removing instance triglut_1_0_7 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":387:12:387:16|Removing sequential instance FF_27 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":391:12:391:16|Removing sequential instance FF_26 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":694:14:694:26|Removing instance triglut_1_0_6 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":700:14:700:26|Removing instance triglut_1_0_5 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":395:12:395:16|Removing sequential instance FF_25 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":399:12:399:16|Removing sequential instance FF_24 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":706:14:706:26|Removing instance triglut_1_0_4 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":712:14:712:26|Removing instance triglut_1_0_3 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":403:12:403:16|Removing sequential instance FF_23 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":718:14:718:26|Removing instance triglut_1_0_2 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":724:14:724:26|Removing instance triglut_1_0_1 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":730:14:730:26|Removing instance triglut_1_0_0 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+syn_allowed_resources : blockrams=26  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+
+Clock Summary
+******************
+
+          Start                          Requested     Requested     Clock        Clock                   Clock
+Level     Clock                          Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------------------
+0 -       System                         100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                               
+0 -       osc_clk                        2.5 MHz       400.000       virtual      default_clkgroup        0    
+                                                                                                               
+0 -       top|osc_clk_inferred_clock     88.7 MHz      11.278        inferred     Inferred_clkgroup_0     1307 
+===============================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                               Clock     Source                  Clock Pin          Non-clock Pin     Non-clock Pin
+Clock                          Load      Pin                     Seq Example        Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------
+System                         0         -                       -                  -                 -            
+                                                                                                                   
+osc_clk                        0         -                       -                  -                 -            
+                                                                                                                   
+top|osc_clk_inferred_clock     1307      OSCH_inst.OSC(OSCH)     MixerI.FF_0.CK     -                 -            
+===================================================================================================================
+
+@W: MT529 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":273:12:273:16|Found inferred clock top|osc_clk_inferred_clock which controls 1307 sequential elements including SinCos1.FF_52. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 1307 clock pin(s) of sequential element(s)
+0 instances converted, 1307 sequential instances remain driven by gated/generated clocks
+
+=================================================== Gated/Generated Clocks ====================================================
+Clock Tree ID     Driving Element     Drive Element Type     Unconverted Fanout     Sample Instance     Explanation            
+-------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       OSCH_inst.OSC       OSCH                   1307                   MixerI.FF_39        Black box on clock path
+===============================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 60MB peak: 146MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Oct 19 22:38:25 2024
+
+###########################################################]

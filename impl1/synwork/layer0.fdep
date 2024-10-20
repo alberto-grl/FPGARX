@@ -1,0 +1,42 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\alberto\\Lattice\\FPGARX\\impl1\\synwork\\FPGARX_impl1_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\alberto\\Lattice\\FPGARX|-I|C:\\Users\\alberto\\Lattice\\FPGARX\\impl1\\|-I|C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\lucent\\machxo2.v|-devicelib|C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\bin64\\c_ver.exe":1554106758
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\lucent\\machxo2.v":1554106088
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\lucent\\pmi_def.v":1554106088
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vlog\\hypermods.v":1554106064
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vlog\\umr_capim.v":1554106064
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1554106064
+#CUR:"C:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1554106064
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\NCO.v":1729370241
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\test.v":1728423002
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\top.v":1729369655
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\impl1\\source\\SinCos.v":1728860703
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\impl1\\source\\Multiplier.v":1728860836
+#CUR:"C:\\Users\\alberto\\Lattice\\FPGARX\\CIC.v":1729119432
+#numinternalfiles:6
+#defaultlanguage:verilog
+0			"C:\Users\alberto\Lattice\FPGARX\NCO.v" verilog
+1			"C:\Users\alberto\Lattice\FPGARX\test.v" verilog
+2			"C:\Users\alberto\Lattice\FPGARX\top.v" verilog
+3			"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v" verilog
+4			"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v" verilog
+5			"C:\Users\alberto\Lattice\FPGARX\CIC.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 3 0 5 4
+3 -1
+4 -1
+5 -1
+#Dependency Lists(Users Of)
+0 2
+1 -1
+2 -1
+3 2
+4 2
+5 2
+#Design Unit to File Association
+module work nco_sig 0
+module work SinCos 3
+module work CIC 5
+module work Multiplier 4
+module work top 2

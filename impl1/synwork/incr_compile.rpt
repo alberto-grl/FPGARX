@@ -1,0 +1,47 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 12
+FID:  path (timestamp)
+12       C:\Users\alberto\Lattice\FPGARX\CIC.v (2024-10-17 00:57:12)
+0        C:\Users\alberto\Lattice\FPGARX\NCO.v (2024-10-19 22:37:21)
+2        C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v (2024-10-14 01:07:16)
+3        C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v (2024-10-14 01:05:03)
+4        C:\Users\alberto\Lattice\FPGARX\test.v (2024-10-08 23:30:02)
+5        C:\Users\alberto\Lattice\FPGARX\top.v (2024-10-19 22:27:35)
+6        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v (2019-04-01 10:08:08)
+7        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v (2019-04-01 10:08:08)
+8        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\hypermods.v (2019-04-01 10:07:44)
+9        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_objects.v (2019-04-01 10:07:44)
+10       C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_pipes.svh (2019-04-01 10:07:44)
+11       C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\umr_capim.v (2019-04-01 10:07:44)
+
+*******************************************************************
+Unchanged modules: 5
+MID:  lib.cell.view
+5        work.CIC.verilog
+0        work.Multiplier.verilog
+1        work.SinCos.verilog
+2        work.nco_sig.verilog
+3        work.top.verilog

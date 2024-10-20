@@ -1,0 +1,59 @@
+#Start recording tcl command: 10/16/2024 21:08:48
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/Mixer.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/UartTX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/SinCos.ipx"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/Multiplier.ipx"
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/Mixer.v"
+prj_src enable "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/CIC.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/SinCos.ipx"
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/Multiplier.ipx"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src add "C:/Users/alberto/Lattice/FPGARX/sdc1.fdc"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis -forceAll
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run PAR -impl impl1
+prj_run Translate -impl impl1
+prj_run Map -impl impl1
+prj_run Translate -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run Translate -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartTX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+#Stop recording: 10/17/2024 01:14:27

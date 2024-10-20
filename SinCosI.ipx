@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="SinCosI" module="Sin-Cos_Table" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 10 16 21:23:30.824" version="1.6" type="Module" synthesis="synplify" source_format="Verilog">
+  <Package>
+		<File name="SinCosI.lpc" type="lpc" modified="2024 10 16 21:23:27.429"/>
+		<File name="SinCosI.v" type="top_level_verilog" modified="2024 10 16 21:23:27.514"/>
+		<File name="SinCosI_tmpl.v" type="template_verilog" modified="2024 10 16 21:23:27.515"/>
+		<File name="tb_SinCosI_tmpl.v" type="testbench_verilog" modified="2024 10 16 21:23:27.531"/>
+  </Package>
+</DiamondModule>

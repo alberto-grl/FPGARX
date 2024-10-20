@@ -1,0 +1,111 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+
+# Written on Sat Oct 19 22:38:25 2024
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      "C:\Users\alberto\Lattice\FPGARX\sdc1.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 1 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                       Ending                         |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                         System                         |     10.000           |     No paths         |     No paths         |     No paths                         
+System                         top|osc_clk_inferred_clock     |     11.278           |     No paths         |     No paths         |     No paths                         
+top|osc_clk_inferred_clock     System                         |     11.278           |     No paths         |     No paths         |     No paths                         
+top|osc_clk_inferred_clock     top|osc_clk_inferred_clock     |     11.278           |     No paths         |     No paths         |     No paths                         
+=========================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:CIC_out_clkSin
+p:DiffOut
+p:MYLED[0]
+p:MYLED[1]
+p:MYLED[2]
+p:MYLED[3]
+p:MYLED[4]
+p:MYLED[5]
+p:MYLED[6]
+p:MYLED[7]
+p:PWMOut
+p:PWMOutN1
+p:PWMOutN2
+p:PWMOutN3
+p:PWMOutN4
+p:PWMOutP1
+p:PWMOutP2
+p:PWMOutP3
+p:PWMOutP4
+p:RFIn[0]
+p:RFIn[1]
+p:RFIn[2]
+p:RFIn[3]
+p:RFIn[4]
+p:RFIn[5]
+p:RFIn[6]
+p:RFIn[7]
+p:RFIn[8]
+p:RFIn[9]
+p:UART_clk
+p:XOut
+p:i_Rx_Serial
+p:o_Tx_Serial
+p:sinGen
+p:sin_out
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

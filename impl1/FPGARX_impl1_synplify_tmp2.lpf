@@ -1,0 +1,1 @@
+create_clock -period 400.000 -waveform {0.000 200.000} -name {osc_clk}

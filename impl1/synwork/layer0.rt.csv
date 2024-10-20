@@ -1,0 +1,20 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, top, 0h:00m:00s,     79 MB
+work, Multiplier, 0h:00m:00s,     79 MB
+work, MULT2, 0h:00m:00s,     79 MB
+work, ND2, 0h:00m:00s,     79 MB
+work, CIC_72s_4096s, 0h:00m:00s,     80 MB
+work, nco_sig, 0h:00m:00s,     80 MB
+work, SinCos, 0h:00m:00s,     80 MB
+work, VLO, 0h:00m:00s,     80 MB
+work, VHI, 0h:00m:00s,     80 MB
+work, ROM256X1A, 0h:00m:00s,     80 MB
+work, FADD2B, 0h:00m:00s,     80 MB
+work, MUX21, 0h:00m:00s,     80 MB
+work, FD1P3DX, 0h:00m:00s,     80 MB
+work, AND2, 0h:00m:00s,     80 MB
+work, ROM16X1A, 0h:00m:00s,     80 MB
+work, XOR2, 0h:00m:00s,     80 MB
+work, INV, 0h:00m:00s,     80 MB
+work, PUR, 0h:00m:00s,     80 MB
+work, OSCH, 0h:00m:00s,     80 MB

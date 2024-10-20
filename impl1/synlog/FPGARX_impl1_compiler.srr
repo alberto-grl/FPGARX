@@ -1,0 +1,224 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys HDL Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys Verilog Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\alberto\Lattice\FPGARX\NCO.v" (library work)
+@I::"C:\Users\alberto\Lattice\FPGARX\test.v" (library work)
+@I::"C:\Users\alberto\Lattice\FPGARX\top.v" (library work)
+@I::"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v" (library work)
+@I::"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v" (library work)
+@I::"C:\Users\alberto\Lattice\FPGARX\CIC.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1793:7:1793:10|Synthesizing module OSCH in library work.
+Running optimization stage 1 on OSCH .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1032:7:1032:9|Synthesizing module PUR in library work.
+Running optimization stage 1 on PUR .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":563:7:563:9|Synthesizing module INV in library work.
+Running optimization stage 1 on INV .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1173:7:1173:10|Synthesizing module XOR2 in library work.
+Running optimization stage 1 on XOR2 .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+Running optimization stage 1 on ROM16X1A .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":43:7:43:10|Synthesizing module AND2 in library work.
+Running optimization stage 1 on AND2 .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+Running optimization stage 1 on FD1P3DX .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":723:7:723:11|Synthesizing module MUX21 in library work.
+Running optimization stage 1 on MUX21 .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":138:7:138:12|Synthesizing module FADD2B in library work.
+Running optimization stage 1 on FADD2B .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1062:7:1062:15|Synthesizing module ROM256X1A in library work.
+Running optimization stage 1 on ROM256X1A .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":8:7:8:12|Synthesizing module SinCos in library work.
+Running optimization stage 1 on SinCos .......
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":8:43:8:46|*Output Sine has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":8:49:8:54|*Output Cosine has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL168 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":271:8:271:12|Removing instance INV_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\NCO.v":13:7:13:13|Synthesizing module nco_sig in library work.
+Running optimization stage 1 on nco_sig .......
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":20:7:20:9|Synthesizing module CIC in library work.
+
+	width=32'b00000000000000000000000001001000
+	decimation_ratio=32'b00000000000000000001000000000000
+   Generated name = CIC_72s_4096s
+Running optimization stage 1 on CIC_72s_4096s .......
+@W: CL169 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":92:2:92:7|Pruning unused register d_scaled[71:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":797:7:797:9|Synthesizing module ND2 in library work.
+Running optimization stage 1 on ND2 .......
+@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":684:7:684:11|Synthesizing module MULT2 in library work.
+Running optimization stage 1 on MULT2 .......
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v":8:7:8:16|Synthesizing module Multiplier in library work.
+Running optimization stage 1 on Multiplier .......
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v":8:53:8:58|*Output Result has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\top.v":45:7:45:9|Synthesizing module top in library work.
+@W: CS263 :"C:\Users\alberto\Lattice\FPGARX\top.v":158:7:158:25|Port-width mismatch for port d_in. The port definition is 12 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\alberto\Lattice\FPGARX\top.v":167:7:167:25|Port-width mismatch for port d_in. The port definition is 12 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":48:10:48:20|Removing wire o_Tx_Serial, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":53:8:53:11|Removing wire XOut, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":55:8:55:14|Removing wire DiffOut, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":56:8:56:13|Removing wire PWMOut, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":57:8:57:15|Removing wire PWMOutP1, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":58:8:58:15|Removing wire PWMOutP2, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":59:8:59:15|Removing wire PWMOutP3, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":60:8:60:15|Removing wire PWMOutP4, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":61:8:61:15|Removing wire PWMOutN1, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":62:8:62:15|Removing wire PWMOutN2, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":63:8:63:15|Removing wire PWMOutN3, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":64:8:64:15|Removing wire PWMOutN4, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":66:8:66:14|Removing wire sin_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":67:8:67:21|Removing wire CIC_out_clkSin, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":68:8:68:15|Removing wire UART_clk, as there is no assignment to it.
+@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":71:11:71:22|Object DelayCounter is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":72:11:72:19|Removing wire i_Tx_Byte, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":76:5:76:12|Removing wire o_Rx_DV1, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":77:10:77:19|Removing wire o_Rx_Byte1, as there is no assignment to it.
+@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":80:11:80:24|Object phase_inc_carr is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":85:19:85:28|Removing wire CIC_outSin, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":88:19:88:28|Removing wire CIC_outCos, as there is no assignment to it.
+@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":94:18:94:30|Object NCO_PLL_Accum is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":97:19:97:32|Removing wire CarrierPLL_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":99:19:99:26|Removing wire DemodOut, as there is no assignment to it.
+Running optimization stage 1 on top .......
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":48:10:48:20|*Output o_Tx_Serial has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":49:17:49:21|*Output MYLED has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":53:8:53:11|*Output XOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":55:8:55:14|*Output DiffOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":56:8:56:13|*Output PWMOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":57:8:57:15|*Output PWMOutP1 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":58:8:58:15|*Output PWMOutP2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":59:8:59:15|*Output PWMOutP3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":60:8:60:15|*Output PWMOutP4 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":61:8:61:15|*Output PWMOutN1 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":62:8:62:15|*Output PWMOutN2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":63:8:63:15|*Output PWMOutN3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":64:8:64:15|*Output PWMOutN4 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":66:8:66:14|*Output sin_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":67:8:67:21|*Output CIC_out_clkSin has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":68:8:68:15|*Output UART_clk has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL168 :"C:\Users\alberto\Lattice\FPGARX\top.v":181:11:181:16|Removing instance MixerQ because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\alberto\Lattice\FPGARX\top.v":164:44:164:50|Removing instance CIC1Cos because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL177 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Sharing sequential element o_Rx_DV. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL279 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bits 7 to 2 of o_Rx_Byte[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bit 0 of o_Rx_Byte[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Running optimization stage 2 on top .......
+@W: CL305 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL279 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bits 63 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Register bit phase_inc_carrGen1[0] is always 0.
+@W: CL156 :"C:\Users\alberto\Lattice\FPGARX\top.v":77:10:77:19|*Input o_Rx_Byte1[1] to expression [dff] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\Users\alberto\Lattice\FPGARX\top.v":47:12:47:22|Input i_Rx_Serial is unused.
+Running optimization stage 2 on Multiplier .......
+Running optimization stage 2 on MULT2 .......
+Running optimization stage 2 on ND2 .......
+Running optimization stage 2 on CIC_72s_4096s .......
+Running optimization stage 2 on nco_sig .......
+Running optimization stage 2 on SinCos .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+Running optimization stage 2 on ROM256X1A .......
+Running optimization stage 2 on FADD2B .......
+Running optimization stage 2 on MUX21 .......
+Running optimization stage 2 on FD1P3DX .......
+Running optimization stage 2 on AND2 .......
+Running optimization stage 2 on ROM16X1A .......
+Running optimization stage 2 on XOR2 .......
+Running optimization stage 2 on INV .......
+Running optimization stage 2 on PUR .......
+Running optimization stage 2 on OSCH .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\alberto\Lattice\FPGARX\impl1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 19 22:38:22 2024
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 19 22:38:22 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\alberto\Lattice\FPGARX\impl1\synwork\FPGARX_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 19 22:38:22 2024
+
+###########################################################]

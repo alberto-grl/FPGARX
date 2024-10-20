@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "FPGARX_impl1.log"
+-o "FPGARX_impl1.csv"
+-pr "FPGARX_impl1.prf"

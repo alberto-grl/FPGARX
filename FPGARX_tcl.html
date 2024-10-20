@@ -1,0 +1,234 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn241008233727"></A><B><U><big>pn241008233727</big></U></B>
+#Start recording tcl command: 10/8/2024 23:20:45
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+file copy -force -- "C:/Users/alberto/1bitSDR-master/impl1/source/top.v" "C:/Users/alberto/1bitSDR-master/impl1/source/UartRX.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/top.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source/UartRX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/test.v"
+prj_src remove "C:/Users/alberto/Lattice/FPGARX/impl1/source/top.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/top.v"
+prj_src remove "C:/Users/alberto/Lattice/FPGARX/impl1/source/UartRX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_project save
+prj_project close
+#Stop recording: 10/8/2024 23:37:27
+
+
+
+<A name="pn241009201736"></A><B><U><big>pn241009201736</big></U></B>
+#Start recording tcl command: 10/9/2024 20:16:27
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_project close
+#Stop recording: 10/9/2024 20:17:36
+
+
+
+<A name="pn241009205619"></A><B><U><big>pn241009205619</big></U></B>
+#Start recording tcl command: 10/9/2024 20:35:35
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_project close
+#Stop recording: 10/9/2024 20:56:19
+
+
+
+<A name="pn241014022437"></A><B><U><big>pn241014022437</big></U></B>
+#Start recording tcl command: 10/14/2024 00:59:00
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+file copy -force -- "C:/Users/alberto/Lattice/FPGARX/SinCos.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/SinCos.v"
+file copy -force -- "C:/Users/alberto/Lattice/FPGARX/Multiplier.v" "C:/Users/alberto/Lattice/FPGARX/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Translate -impl impl1
+#Stop recording: 10/14/2024 02:24:37
+
+
+
+<A name="pn241015220732"></A><B><U><big>pn241015220732</big></U></B>
+#Start recording tcl command: 10/15/2024 21:43:12
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+#Stop recording: 10/15/2024 22:07:32
+
+
+
+<A name="pn241017011427"></A><B><U><big>pn241017011427</big></U></B>
+#Start recording tcl command: 10/16/2024 21:08:48
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/Mixer.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/UartTX.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/SinCos.ipx"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/Multiplier.ipx"
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/Mixer.v"
+prj_src enable "C:/Users/alberto/Lattice/FPGARX/impl1/source/Multiplier.v"
+prj_src add "C:/Users/alberto/Lattice/FPGARX/CIC.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/SinCos.ipx"
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/Multiplier.ipx"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src add "C:/Users/alberto/Lattice/FPGARX/sdc1.fdc"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis -forceAll
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run PAR -impl impl1
+prj_run Translate -impl impl1
+prj_run Map -impl impl1
+prj_run Translate -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run Translate -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartTX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+#Stop recording: 10/17/2024 01:14:27
+
+
+
+<A name="pn241017224018"></A><B><U><big>pn241017224018</big></U></B>
+#Start recording tcl command: 10/17/2024 22:32:22
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+#Stop recording: 10/17/2024 22:40:18
+
+
+
+<A name="pn241019021252"></A><B><U><big>pn241019021252</big></U></B>
+#Start recording tcl command: 10/18/2024 21:34:10
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src enable "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceOne
+prj_run PAR -impl impl1 -forceAll
+prj_src exclude "C:/Users/alberto/Lattice/FPGARX/UartRX.v"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+#Stop recording: 10/19/2024 02:12:52
+
+
+
+<A name="pn241019185834"></A><B><U><big>pn241019185834</big></U></B>
+#Start recording tcl command: 10/19/2024 17:58:35
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+#Stop recording: 10/19/2024 18:58:34
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
