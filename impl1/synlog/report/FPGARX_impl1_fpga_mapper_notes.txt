@@ -3,142 +3,296 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MF284 |Setting synthesis effort to medium for the design
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":68:8:68:15|Tristate driver UART_clk (in view: work.top(verilog)) on net UART_clk (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":67:8:67:21|Tristate driver CIC_out_clkSin (in view: work.top(verilog)) on net CIC_out_clkSin (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":66:8:66:14|Tristate driver sin_out (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":64:8:64:15|Tristate driver PWMOutN4 (in view: work.top(verilog)) on net PWMOutN4 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":63:8:63:15|Tristate driver PWMOutN3 (in view: work.top(verilog)) on net PWMOutN3 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":62:8:62:15|Tristate driver PWMOutN2 (in view: work.top(verilog)) on net PWMOutN2 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":61:8:61:15|Tristate driver PWMOutN1 (in view: work.top(verilog)) on net PWMOutN1 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":60:8:60:15|Tristate driver PWMOutP4 (in view: work.top(verilog)) on net PWMOutP4 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":59:8:59:15|Tristate driver PWMOutP3 (in view: work.top(verilog)) on net PWMOutP3 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":58:8:58:15|Tristate driver PWMOutP2 (in view: work.top(verilog)) on net PWMOutP2 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[65] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[64] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[63] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[62] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[61] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[60] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[59] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[58] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[57] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[56] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[55] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[54] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[53] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[52] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[51] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[50] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[49] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[48] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[47] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[46] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[45] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[44] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[43] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[29] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[28] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[27] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[26] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[25] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[24] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[23] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[22] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[21] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[20] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[19] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[18] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[17] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[16] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[15] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[14] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[13] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[12] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[11] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[10] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[9] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[8] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[7] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[6] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[5] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[4] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[3] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[2] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[1] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[0] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[53] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[52] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[51] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[50] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[49] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[48] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[47] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[46] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[45] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[44] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[43] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[42] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[41] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[40] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[39] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[38] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[37] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[36] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[35] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[34] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[33] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[32] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[31] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[30] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[29] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[28] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[27] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[26] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[25] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[24] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[23] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[22] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[21] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[20] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[19] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[18] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[17] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[16] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[15] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[14] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[13] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[12] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[11] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[10] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[9] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[8] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[7] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[6] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[5] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[4] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[3] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[2] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[1] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[0] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[5] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_2 (in view: work.top(verilog)) on net MYLED[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_3 (in view: work.top(verilog)) on net MYLED[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_4 (in view: work.top(verilog)) on net MYLED[2] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[7] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[6] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[5] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[4] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[3] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[2] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[29] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[26] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[25] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[24] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[23] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[22] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[21] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[20] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[29] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[26] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[25] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[24] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[23] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[22] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[21] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[20] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[24] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[23] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[22] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[21] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[20] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[30] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[29] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[26] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[25] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[54] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[53] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[52] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[51] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[50] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[49] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[48] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[47] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[46] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[45] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[44] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[43] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[63] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[62] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[61] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[60] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[59] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[58] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[57] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[56] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen[55] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance CICGain[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance CICGain[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[30] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[29] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[26] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[25] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[24] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[23] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[22] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[21] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[20] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[48] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[47] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[46] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[45] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[44] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[43] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[53] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[52] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[51] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[50] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[49] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[58] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[57] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[56] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[55] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[54] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[53] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[52] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[51] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[50] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[49] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[48] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[47] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[46] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[45] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[44] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[43] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[58] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[57] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[56] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[55] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[54] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[53] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[52] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[51] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[50] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[49] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[48] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[47] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[46] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[45] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[44] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[43] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[63] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[62] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[61] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[60] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[59] (in view: work.top(verilog)) because it does not drive other instances.
@@ -147,9 +301,11 @@
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[56] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[55] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[54] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[63] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[62] (in view: work.top(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_2_.un1[0] (in view: work.top(verilog)) on net MYLED[2] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_3_.un1[0] (in view: work.top(verilog)) on net MYLED[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_4_.un1[0] (in view: work.top(verilog)) on net MYLED[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_5_.un1[0] (in view: work.top(verilog)) on net MYLED[5] (in view: work.top(verilog)) has its enable tied to GND.
 @N: FX1056 |Writing EDF file: C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: TQFP144
 // ncd File: fpgarx_impl1.ncd
 // Version: Diamond (64-bit) 3.11.0.396.4
-// Written on Sat Oct 19 22:39:10 2024
+// Written on Thu Oct 24 00:58:26 2024
 // M: Minimum Performance Grade
 // iotiming FPGARX_impl1.ncd FPGARX_impl1.prf -gui -msgset C:/Users/alberto/Lattice/FPGARX/promote.xml
 
@@ -57,7 +57,3 @@ Port     Internal_Clock
 --------------------------------------------------------
 MYLED[0] osc_clk       
 MYLED[1] osc_clk       
-MYLED[2] osc_clk       
-MYLED[3] osc_clk       
-MYLED[4] osc_clk       
-MYLED[5] osc_clk       

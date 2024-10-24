@@ -1,2 +1,3 @@
+@W: BN132 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen1[63:0] because it is equivalent to instance phase_inc_carrGen[63:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: MT246 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":285:8:285:13|Blackbox ND2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock top|osc_clk_inferred_clock with period 11.28ns. Please declare a user-defined clock on net osc_clk.

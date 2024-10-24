@@ -1,14 +1,14 @@
 C:\lscc\diamond\3.11_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\alberto\Lattice\FPGARX\impl1   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -infer_seqShift -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -enable_gcc_in_premap -summaryfile C:\Users\alberto\Lattice\FPGARX\impl1\synlog\report\FPGARX_impl1_premap.xml -merge_inferred_clocks 0  -top_level_module  top  -oedif  C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1.edi  -conchk_prepass  C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1_cck.rpt   -freq 100.000   -tcl  C:\Users\alberto\Lattice\FPGARX\sdc1.fdc  C:\Users\alberto\Lattice\FPGARX\impl1\synwork\FPGARX_impl1_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\alberto\Lattice\FPGARX\impl1\synwork\FPGARX_impl1_prem.srd  -devicelib  C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\alberto\Lattice\FPGARX\impl1\syntmp\FPGARX_impl1.plg  -osyn  C:\Users\alberto\Lattice\FPGARX\impl1\synwork\FPGARX_impl1_prem.srd  -prjdir  C:\Users\alberto\Lattice\FPGARX\impl1\  -prjname  proj_1  -log  C:\Users\alberto\Lattice\FPGARX\impl1\synlog\FPGARX_impl1_premap.srr  -sn  2018.03  -jobname  "premap" 
 relcom:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\bin64\m_gen_lattice.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\impl1 -part LCMXO2_7000HE -package TG144C -grade -4 -maxfan 1000 -pipe -infer_seqShift -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -enable_gcc_in_premap -summaryfile ..\synlog\report\FPGARX_impl1_premap.xml -merge_inferred_clocks 0 -top_level_module top -oedif ..\FPGARX_impl1.edi -conchk_prepass ..\FPGARX_impl1_cck.rpt -freq 100.000 -tcl ..\..\sdc1.fdc ..\synwork\FPGARX_impl1_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\FPGARX_impl1_prem.srd -devicelib ..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v -devicelib ..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v -ologparam FPGARX_impl1.plg -osyn ..\synwork\FPGARX_impl1_prem.srd -prjdir ..\ -prjname proj_1 -log ..\synlog\FPGARX_impl1_premap.srr -sn 2018.03 -jobname "premap"
 rc:1 success:1 runtime:1
-file:..\FPGARX_impl1.edi|io:o|time:1729370255|size:961490|exec:0|csum:
-file:..\FPGARX_impl1_cck.rpt|io:o|time:1729370305|size:3260|exec:0|csum:
+file:..\FPGARX_impl1.edi|io:o|time:1729719581|size:1631354|exec:0|csum:
+file:..\FPGARX_impl1_cck.rpt|io:o|time:1729724257|size:3079|exec:0|csum:
 file:..\..\sdc1.fdc|io:i|time:1729120129|size:42|exec:0|csum:CB0BE2EC806187D7623901C7D9FBA8C0
-file:..\synwork\FPGARX_impl1_mult.srs|io:i|time:1729370304|size:5110|exec:0|csum:0AA1D810744C5C512CDE352EB1BBED07
-file:..\synwork\FPGARX_impl1_prem.srd|io:o|time:1729370304|size:41506|exec:0|csum:
+file:..\synwork\FPGARX_impl1_mult.srs|io:i|time:1729724256|size:7160|exec:0|csum:245EAFEC7FC2079D3FDD4583374C0306
+file:..\synwork\FPGARX_impl1_prem.srd|io:o|time:1729724256|size:44354|exec:0|csum:
 file:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1554106088|size:54295|exec:0|csum:CFBBE5B6AB5A98F0C71C4E305509B0E3
 file:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1554106088|size:40584|exec:0|csum:62845CEC2BB6FEBE1BA059B1E18015F4
-file:FPGARX_impl1.plg|io:o|time:1729370304|size:0|exec:0|csum:
-file:..\synwork\FPGARX_impl1_prem.srd|io:o|time:1729370304|size:41506|exec:0|csum:
-file:..\synlog\FPGARX_impl1_premap.srr|io:o|time:1729370305|size:18466|exec:0|csum:
+file:FPGARX_impl1.plg|io:o|time:1729724256|size:0|exec:0|csum:
+file:..\synwork\FPGARX_impl1_prem.srd|io:o|time:1729724256|size:44354|exec:0|csum:
+file:..\synlog\FPGARX_impl1_premap.srr|io:o|time:1729724257|size:8523|exec:0|csum:
 file:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1554282584|size:31323136|exec:1|csum:08097D0E6BC0EF6D7ADDF60173F7DE28

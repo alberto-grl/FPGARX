@@ -45,16 +45,16 @@ TODO: Real user inteface
 module top 
   (
    input    i_Rx_Serial,
-   output o_Tx_Serial,
+ //  output o_Tx_Serial,
    	output [7:0] MYLED,
 	`ifdef CLOCK_IS_80_MHZ 
 	input XIn,
 	`endif
-	output XOut,
+	//output XOut,
 	input [9:0] RFIn, 
-	output DiffOut,
-	output PWMOut,	
-	output PWMOutP1,
+	//output DiffOut,
+//	output PWMOut,	
+/*	output PWMOutP1,
 	output PWMOutP2,
 	output PWMOutP3,
 	output PWMOutP4,
@@ -62,14 +62,14 @@ module top
 	output PWMOutN2,
 	output PWMOutN3,
 	output PWMOutN4,
-	output sinGen,
-	output sin_out,
-	output CIC_out_clkSin,
-	output UART_clk
+*/	
+	output sinGen
+//	output CIC_out_clkSin,
+//	output UART_clk
    );
   wire osc_clk;
-reg [31:0] DelayCounter; 
-wire [7:0] i_Tx_Byte;
+//reg [31:0] DelayCounter; 
+//wire [7:0] i_Tx_Byte;
 reg o_Rx_DV;
 reg[7:0] o_Rx_Byte;
 
@@ -77,26 +77,24 @@ wire o_Rx_DV1;
 wire[7:0] o_Rx_Byte1;
 
 
-reg [63:0] phase_inc_carr;
+//reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
 wire  cosGen;
 wire signed [19:0] MixerOutSin;
 wire signed [19:0] MixerOutCos;
-wire signed [11:0] CIC_outSin;
-wire signed [11:0] CIC1_outSin;
+wire signed [19:0] CIC1_outSin;
 wire CIC1_out_clkSin;
-wire signed [11:0] CIC_outCos;
-wire signed [11:0] CIC1_outCos;
+wire signed [19:0] CIC1_outCos;
 wire CIC1_out_clkCos;
 wire [63:0] phase_accum;
 wire signed [9:0] LOSine;
 wire signed [9:0] LOCosine;
-reg signed [63:0] NCO_PLL_Accum;
+//reg signed [63:0] NCO_PLL_Accum;
 reg signed [63:0] phase_inc_carrGen;
 reg signed [63:0] phase_inc_carrGen1;
-wire signed [31:0] CarrierPLL_out;
+//wire signed [31:0] CarrierPLL_out;
 
-wire signed [11:0] DemodOut;
+
 
 reg [7:0] CICGain;
 
@@ -152,19 +150,19 @@ nco_sig	 ncoGen (
 
 	
 
-CIC  #(.width(72), .decimation_ratio(4096)) CIC1Sin (
+CIC  #(.width(60), .decimation_ratio(256)) CIC1Sin (
 .osc_clk (osc_clk),
 .Gain (CICGain),
-.d_in (MixerOutSin[19:10]),
+.d_in (MixerOutSin),
 .d_out (CIC1_outSin),
 .d_clk (CIC1_out_clkSin)
 );  
 
 
-CIC  #(.width(72), .decimation_ratio(4096)) CIC1Cos (
+CIC  #(.width(60), .decimation_ratio(256)) CIC1Cos (
 .osc_clk (osc_clk),
 .Gain (CICGain),
-.d_in (MixerOutCos[19:10]),
+.d_in (MixerOutCos),
 .d_out (CIC1_outCos),
 .d_clk (CIC1_out_clkCos)
 );  
@@ -194,14 +192,18 @@ PLL PLL1 (
 `endif
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
-assign MYLED[5:0] = CIC1_outSin [11:6];
+assign MYLED[0] = CIC1_outSin [11];
+assign MYLED[1] = CIC1_outCos [11];
 //assign MYLED[5:0] = DemodOut [11:6];
 //assign MYLED[5:0] = o_Rx_Byte [7:2];
 //assign MYLED[7] = CarrierPLL_out[31];
 //assign MYLED[6] = cos_out; 
-//assign MYLED[7:6] = CIC1_outSin [11:10];
-assign MYLED[6] = o_Rx_Byte [1];
+assign MYLED[6] = MixerOutSin[19];
 
+assign MYLED[7] = MixerOutCos[19];
+//assign MYLED[6] = o_Rx_Byte [1];
+
+assign o_Rx_Byte1 = MixerOutCos[7:0];
 /*
 //CLKS_PER_BIT(87) -> 115200 @ 80MHz 
 uart_rx  #(.CLKS_PER_BIT(87))  uart_rx1 (
@@ -210,7 +212,8 @@ uart_rx  #(.CLKS_PER_BIT(87))  uart_rx1 (
 .o_Rx_DV  (o_Rx_DV1),
 .o_Rx_Byte (o_Rx_Byte1)
 );
-	
+*/
+
 /*
 uart_tx  #(.CLKS_PER_BIT(87))  uart_tx1 (
 .osc_clk (osc_clk), 
@@ -227,7 +230,8 @@ uart_tx  #(.CLKS_PER_BIT(87))  uart_tx1 (
 always @ (posedge osc_clk)
 	begin
 	phase_inc_carrGen1 <= phase_inc_carrGen;	
-	
+
+
 	o_Rx_DV <= o_Rx_DV1;
     o_Rx_Byte <= o_Rx_Byte1;
 	
@@ -236,11 +240,12 @@ always @ (posedge osc_clk)
 	
  case (o_Rx_Byte)
     7'd48  : CICGain <= 7'd0; // 0
-    49  : CICGain <= 7'd1; // 1
-	50  : CICGain <= 7'd2; // 2
-	51  : CICGain <= 7'd3; // 3
+    7'd49  : CICGain <= 7'd1; // 1
+	7'd50  : CICGain <= 7'd2; // 2
+	7'd51  : CICGain <= 7'd3; // 3
  endcase
-   
+  
+  
 `ifdef CLOCK_IS_80_MHZ 
    case (o_Rx_Byte)
     97  : phase_inc_carrGen <= 64'h 2e147ae147ae147; //a Siziano 900 KHz
@@ -272,8 +277,10 @@ always @ (posedge osc_clk)
 	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h ca22980ba57e ; //q - 1KHz
 	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e ; //r + 1 KHz 
   endcase
-`endif		
+`endif	
+
   end
+
 end
 
 endmodule

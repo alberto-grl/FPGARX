@@ -1,0 +1,31 @@
+#Start recording tcl command: 10/23/2024 17:27:16
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceOne
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+source "C:/Users/alberto/Lattice/FPGARX/hdle_generate_Symbol.tcl"
+prj_strgy set "Quick"
+prj_run PAR -impl impl1 -forceAll
+prj_strgy set "Strategy1"
+#Stop recording: 10/24/2024 00:59:54

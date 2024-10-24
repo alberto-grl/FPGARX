@@ -6,43 +6,28 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sat Oct 19 22:38:54 2024
+Thu Oct 24 00:58:05 2024
 
 Pinout by Port Name:
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
-| Port Name      | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                     |
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
-| CIC_out_clkSin | 70/2     | LVCMOS25_OUT | PB38A |           |           | DRIVE:8mA SLEW:SLOW            |
-| DiffOut        | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA SLEW:SLOW            |
-| MYLED[0]       | 85/1     | LVCMOS25_OUT | PR16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[1]       | 89/1     | LVCMOS25_OUT | PR15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[2]       | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[3]       | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[4]       | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[5]       | 86/1     | LVCMOS25_OUT | PR16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[6]       | 71/2     | LVCMOS25_OUT | PB38B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| MYLED[7]       | 91/1     | LVCMOS25_OUT | PR12B |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOut         | 69/2     | LVCMOS25_OUT | PB37B |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutN1       | 92/1     | LVCMOS25_OUT | PR12A |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutN2       | 73/1     | LVCMOS25_OUT | PR24B |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutN3       | 94/1     | LVCMOS25_OUT | PR11A |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutN4       | 78/1     | LVCMOS25_OUT | PR21A |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutP1       | 68/2     | LVCMOS25_OUT | PB37A |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutP2       | 93/1     | LVCMOS25_OUT | PR11B |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutP3       | 77/1     | LVCMOS25_OUT | PR21B |           |           | DRIVE:8mA SLEW:SLOW            |
-| PWMOutP4       | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA SLEW:SLOW            |
-| UART_clk       | 76/1     | LVCMOS25_OUT | PR23A |           |           | DRIVE:8mA SLEW:SLOW            |
-| XOut           | 82/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA SLEW:SLOW            |
-| o_Tx_Serial    | 75/1     | LVCMOS25_OUT | PR23B |           |           | DRIVE:8mA SLEW:SLOW            |
-| sinGen         | 84/1     | LVCMOS25_OUT | PR17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| sin_out        | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA SLEW:SLOW            |
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------+
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                     |
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
+| MYLED[0]  | 125/0    | LVCMOS25_OUT | PT22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| MYLED[1]  | 50/2     | LVCMOS25_OUT | PB16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| MYLED[2]  | 59/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA SLEW:SLOW            |
+| MYLED[3]  | 55/2     | LVCMOS25_OUT | PB23A |           |           | DRIVE:8mA SLEW:SLOW            |
+| MYLED[4]  | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA SLEW:SLOW            |
+| MYLED[5]  | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA SLEW:SLOW            |
+| MYLED[6]  | 49/2     | LVCMOS25_OUT | PB16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| MYLED[7]  | 54/2     | LVCMOS25_OUT | PB18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| sinGen    | 44/2     | LVCMOS25_OUT | PB12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
++-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
-| 1    | 2.5V  |
+| 0    | 2.5V  |
 | 2    | 2.5V  |
 +------+-------+
 
@@ -91,47 +76,47 @@ Pinout by Pin Number:
 | 41/2     |     unused, PULL:DOWN |            |              | PB6B  |                |           |           |
 | 42/2     |     unused, PULL:DOWN |            |              | PB9A  |                |           |           |
 | 43/2     |     unused, PULL:DOWN |            |              | PB9B  |                |           |           |
-| 44/2     |     unused, PULL:DOWN |            |              | PB12A | MCLK/CCLK      |           |           |
+| 44/2     | sinGen                |            | LVCMOS25_OUT | PB12A | MCLK/CCLK      |           |           |
 | 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
 | 47/2     |     unused, PULL:DOWN |            |              | PB13A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
-| 49/2     |     unused, PULL:DOWN |            |              | PB16A | PCLKT2_0       |           |           |
-| 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
+| 49/2     | MYLED[6]              |            | LVCMOS25_OUT | PB16A | PCLKT2_0       |           |           |
+| 50/2     | MYLED[1]              |            | LVCMOS25_OUT | PB16B | PCLKC2_0       |           |           |
 | 52/2     |     unused, PULL:DOWN |            |              | PB18A |                |           |           |
-| 54/2     |     unused, PULL:DOWN |            |              | PB18B |                |           |           |
-| 55/2     |     unused, PULL:DOWN |            |              | PB23A | PCLKT2_1       |           |           |
+| 54/2     | MYLED[7]              |            | LVCMOS25_OUT | PB18B |                |           |           |
+| 55/2     | MYLED[3]              |            | LVCMOS25_OUT | PB23A | PCLKT2_1       |           |           |
 | 56/2     |     unused, PULL:DOWN |            |              | PB23B | PCLKC2_1       |           |           |
 | 57/2     |     unused, PULL:DOWN |            |              | PB26A |                |           |           |
 | 58/2     |     unused, PULL:DOWN |            |              | PB26B |                |           |           |
-| 59/2     |     unused, PULL:DOWN |            |              | PB29A |                |           |           |
+| 59/2     | MYLED[2]              |            | LVCMOS25_OUT | PB29A |                |           |           |
 | 60/2     |     unused, PULL:DOWN |            |              | PB29B |                |           |           |
-| 61/2     | MYLED[4]              |            | LVCMOS25_OUT | PB31A |                |           |           |
-| 62/2     | MYLED[2]              |            | LVCMOS25_OUT | PB31B |                |           |           |
+| 61/2     | MYLED[5]              |            | LVCMOS25_OUT | PB31A |                |           |           |
+| 62/2     | MYLED[4]              |            | LVCMOS25_OUT | PB31B |                |           |           |
 | 63/2     |     unused, PULL:DOWN |            |              | PB31D |                |           |           |
 | 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
 | 67/2     |     unused, PULL:DOWN |            |              | PB35B |                |           |           |
-| 68/2     | PWMOutP1              |            | LVCMOS25_OUT | PB37A |                |           |           |
-| 69/2     | PWMOut                |            | LVCMOS25_OUT | PB37B |                |           |           |
-| 70/2     | CIC_out_clkSin        |            | LVCMOS25_OUT | PB38A | SN             |           |           |
-| 71/2     | MYLED[6]              |            | LVCMOS25_OUT | PB38B | SI/SISPI       |           |           |
-| 73/1     | PWMOutN2              |            | LVCMOS25_OUT | PR24B | DQ1            |           |           |
-| 74/1     | sin_out               |            | LVCMOS25_OUT | PR24A | DQ1            |           |           |
-| 75/1     | o_Tx_Serial           |            | LVCMOS25_OUT | PR23B | DQ1            |           |           |
-| 76/1     | UART_clk              |            | LVCMOS25_OUT | PR23A | DQ1            |           |           |
-| 77/1     | PWMOutP3              |            | LVCMOS25_OUT | PR21B | DQ1            |           |           |
-| 78/1     | PWMOutN4              |            | LVCMOS25_OUT | PR21A | DQ1            |           |           |
-| 81/1     | DiffOut               |            | LVCMOS25_OUT | PR18B | DQ1            |           |           |
-| 82/1     | XOut                  |            | LVCMOS25_OUT | PR18A | DQ1            |           |           |
-| 83/1     | PWMOutP4              |            | LVCMOS25_OUT | PR17B | DQ1            |           |           |
-| 84/1     | sinGen                |            | LVCMOS25_OUT | PR17A | DQ1            |           |           |
-| 85/1     | MYLED[0]              |            | LVCMOS25_OUT | PR16B | DQS1N          |           |           |
-| 86/1     | MYLED[5]              |            | LVCMOS25_OUT | PR16A | DQS1           |           |           |
-| 87/1     | MYLED[3]              |            | LVCMOS25_OUT | PR15B |                |           |           |
-| 89/1     | MYLED[1]              |            | LVCMOS25_OUT | PR15A |                |           |           |
-| 91/1     | MYLED[7]              |            | LVCMOS25_OUT | PR12B | PCLKC1_0/DQ0   |           |           |
-| 92/1     | PWMOutN1              |            | LVCMOS25_OUT | PR12A | PCLKT1_0/DQ0   |           |           |
-| 93/1     | PWMOutP2              |            | LVCMOS25_OUT | PR11B | DQS0N          |           |           |
-| 94/1     | PWMOutN3              |            | LVCMOS25_OUT | PR11A | DQS0           |           |           |
+| 68/2     |     unused, PULL:DOWN |            |              | PB37A |                |           |           |
+| 69/2     |     unused, PULL:DOWN |            |              | PB37B |                |           |           |
+| 70/2     |     unused, PULL:DOWN |            |              | PB38A | SN             |           |           |
+| 71/2     |     unused, PULL:DOWN |            |              | PB38B | SI/SISPI       |           |           |
+| 73/1     |     unused, PULL:DOWN |            |              | PR24B | DQ1            |           |           |
+| 74/1     |     unused, PULL:DOWN |            |              | PR24A | DQ1            |           |           |
+| 75/1     |     unused, PULL:DOWN |            |              | PR23B | DQ1            |           |           |
+| 76/1     |     unused, PULL:DOWN |            |              | PR23A | DQ1            |           |           |
+| 77/1     |     unused, PULL:DOWN |            |              | PR21B | DQ1            |           |           |
+| 78/1     |     unused, PULL:DOWN |            |              | PR21A | DQ1            |           |           |
+| 81/1     |     unused, PULL:DOWN |            |              | PR18B | DQ1            |           |           |
+| 82/1     |     unused, PULL:DOWN |            |              | PR18A | DQ1            |           |           |
+| 83/1     |     unused, PULL:DOWN |            |              | PR17B | DQ1            |           |           |
+| 84/1     |     unused, PULL:DOWN |            |              | PR17A | DQ1            |           |           |
+| 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
+| 86/1     |     unused, PULL:DOWN |            |              | PR16A | DQS1           |           |           |
+| 87/1     |     unused, PULL:DOWN |            |              | PR15B |                |           |           |
+| 89/1     |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
+| 91/1     |     unused, PULL:DOWN |            |              | PR12B | PCLKC1_0/DQ0   |           |           |
+| 92/1     |     unused, PULL:DOWN |            |              | PR12A | PCLKT1_0/DQ0   |           |           |
+| 93/1     |     unused, PULL:DOWN |            |              | PR11B | DQS0N          |           |           |
+| 94/1     |     unused, PULL:DOWN |            |              | PR11A | DQS0           |           |           |
 | 95/1     |     unused, PULL:DOWN |            |              | PR9B  | DQ0            |           |           |
 | 96/1     |     unused, PULL:DOWN |            |              | PR9A  | DQ0            |           |           |
 | 97/1     |     unused, PULL:DOWN |            |              | PR7B  | DQ0            |           |           |
@@ -155,7 +140,7 @@ Pinout by Pin Number:
 | 120/0    |     unused, PULL:DOWN |            |              | PT27C | JTAGENB        |           |           |
 | 121/0    |     unused, PULL:DOWN |            |              | PT25B |                |           |           |
 | 122/0    |     unused, PULL:DOWN |            |              | PT25A |                |           |           |
-| 125/0    |     unused, PULL:DOWN |            |              | PT22D | SDA/PCLKC0_0   |           |           |
+| 125/0    | MYLED[0]              |            | LVCMOS25_OUT | PT22D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT22C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
 | 128/0    |     unused, PULL:DOWN |            |              | PT18A | PCLKT0_1       |           |           |
@@ -410,30 +395,15 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
-LOCATE  COMP  "CIC_out_clkSin"  SITE  "70";
-LOCATE  COMP  "DiffOut"  SITE  "81";
-LOCATE  COMP  "MYLED[0]"  SITE  "85";
-LOCATE  COMP  "MYLED[1]"  SITE  "89";
-LOCATE  COMP  "MYLED[2]"  SITE  "62";
-LOCATE  COMP  "MYLED[3]"  SITE  "87";
-LOCATE  COMP  "MYLED[4]"  SITE  "61";
-LOCATE  COMP  "MYLED[5]"  SITE  "86";
-LOCATE  COMP  "MYLED[6]"  SITE  "71";
-LOCATE  COMP  "MYLED[7]"  SITE  "91";
-LOCATE  COMP  "PWMOut"  SITE  "69";
-LOCATE  COMP  "PWMOutN1"  SITE  "92";
-LOCATE  COMP  "PWMOutN2"  SITE  "73";
-LOCATE  COMP  "PWMOutN3"  SITE  "94";
-LOCATE  COMP  "PWMOutN4"  SITE  "78";
-LOCATE  COMP  "PWMOutP1"  SITE  "68";
-LOCATE  COMP  "PWMOutP2"  SITE  "93";
-LOCATE  COMP  "PWMOutP3"  SITE  "77";
-LOCATE  COMP  "PWMOutP4"  SITE  "83";
-LOCATE  COMP  "UART_clk"  SITE  "76";
-LOCATE  COMP  "XOut"  SITE  "82";
-LOCATE  COMP  "o_Tx_Serial"  SITE  "75";
-LOCATE  COMP  "sinGen"  SITE  "84";
-LOCATE  COMP  "sin_out"  SITE  "74";
+LOCATE  COMP  "MYLED[0]"  SITE  "125";
+LOCATE  COMP  "MYLED[1]"  SITE  "50";
+LOCATE  COMP  "MYLED[2]"  SITE  "59";
+LOCATE  COMP  "MYLED[3]"  SITE  "55";
+LOCATE  COMP  "MYLED[4]"  SITE  "62";
+LOCATE  COMP  "MYLED[5]"  SITE  "61";
+LOCATE  COMP  "MYLED[6]"  SITE  "49";
+LOCATE  COMP  "MYLED[7]"  SITE  "54";
+LOCATE  COMP  "sinGen"  SITE  "44";
 
 
 
@@ -445,5 +415,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Oct 19 22:38:54 2024
+Thu Oct 24 00:58:05 2024
 

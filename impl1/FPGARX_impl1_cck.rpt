@@ -13,7 +13,7 @@ Hostname: DESKTOP-LI6GKLP
 
 Implementation : impl1
 
-# Written on Sat Oct 19 22:38:25 2024
+# Written on Thu Oct 24 00:57:37 2024
 
 ##### DESIGN INFO #######################################################
 
@@ -49,8 +49,6 @@ top|osc_clk_inferred_clock     top|osc_clk_inferred_clock     |     11.278      
 Unconstrained Start/End Points
 ******************************
 
-p:CIC_out_clkSin
-p:DiffOut
 p:MYLED[0]
 p:MYLED[1]
 p:MYLED[2]
@@ -59,15 +57,6 @@ p:MYLED[4]
 p:MYLED[5]
 p:MYLED[6]
 p:MYLED[7]
-p:PWMOut
-p:PWMOutN1
-p:PWMOutN2
-p:PWMOutN3
-p:PWMOutN4
-p:PWMOutP1
-p:PWMOutP2
-p:PWMOutP3
-p:PWMOutP4
 p:RFIn[0]
 p:RFIn[1]
 p:RFIn[2]
@@ -78,12 +67,8 @@ p:RFIn[6]
 p:RFIn[7]
 p:RFIn[8]
 p:RFIn[9]
-p:UART_clk
-p:XOut
 p:i_Rx_Serial
-p:o_Tx_Serial
 p:sinGen
-p:sin_out
 
 
 Inapplicable constraints

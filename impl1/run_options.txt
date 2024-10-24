@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03L-SP1-1
 #--  Project file C:\Users\alberto\Lattice\FPGARX\impl1\run_options.txt
-#--  Written on Sat Oct 19 22:38:21 2024
+#--  Written on Thu Oct 24 00:57:33 2024
 
 
 #project files

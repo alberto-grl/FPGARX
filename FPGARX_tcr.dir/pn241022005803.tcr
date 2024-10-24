@@ -1,0 +1,11 @@
+#Start recording tcl command: 10/22/2024 00:31:13
+#Project Location: C:/Users/alberto/Lattice/FPGARX; Project name: FPGARX
+prj_project open "C:/Users/alberto/Lattice/FPGARX/FPGARX.ldf"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+#Stop recording: 10/22/2024 00:58:03

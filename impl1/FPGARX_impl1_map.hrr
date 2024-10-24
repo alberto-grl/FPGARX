@@ -3,32 +3,48 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     557.00        100.0
-                                 IOLGC	       6.00        100.0
-                                  LUT4	      20.00        100.0
-                                 IOREG	          6        100.0
-                                 IOBUF	         24        100.0
-                                PFUREG	       1103        100.0
-                                RIPPLE	        379        100.0
+                                  SLIC	     930.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	      40.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	          9        100.0
+                                PFUREG	       1836        100.0
+                                RIPPLE	        638        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            Multiplier	          1         0.0
-                         CIC_72s_4096s	          1        99.9
+                          CIC_60s_256s	          1        50.5
+                        CIC_60s_256s_0	          1        49.4
                                 SinCos	          1         0.0
+                            Multiplier	          1         0.0
+                          Multiplier_0	          1         0.0
+---------------------------------------------------
+Report for cell Multiplier_0
+   Instance path: top/MixerQ
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
 ---------------------------------------------------
 Report for cell Multiplier
    Instance path: top/MixerI
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell CIC_72s_4096s
+Report for cell CIC_60s_256s_0
+   Instance path: top/CIC1Cos
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     459.83        49.4
+                                  LUT4	      18.00        45.0
+                                PFUREG	        918        50.0
+                                RIPPLE	        319        50.0
+---------------------------------------------------
+Report for cell CIC_60s_256s
    Instance path: top/CIC1Sin
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     556.50        99.9
-                                  LUT4	      18.00        90.0
-                                PFUREG	       1103        100.0
-                                RIPPLE	        379        100.0
+                                  SLIC	     469.67        50.5
+                                  LUT4	      18.00        45.0
+                                PFUREG	        918        50.0
+                                RIPPLE	        319        50.0
 ---------------------------------------------------
 Report for cell SinCos
    Instance path: top/SinCos1

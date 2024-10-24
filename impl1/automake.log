@@ -10,7 +10,7 @@ Lattice Diamond Version 3.11.0.396.4
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-LI6GKLP
 
-# Sat Oct 19 22:38:21 2024
+# Thu Oct 24 00:57:33 2024
 
 #Implementation: impl1
 
@@ -94,13 +94,12 @@ Running optimization stage 1 on SinCos .......
 @W: CL168 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":271:8:271:12|Removing instance INV_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\NCO.v":13:7:13:13|Synthesizing module nco_sig in library work.
 Running optimization stage 1 on nco_sig .......
-@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":20:7:20:9|Synthesizing module CIC in library work.
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":23:7:23:9|Synthesizing module CIC in library work.
 
-	width=32'b00000000000000000000000001001000
-	decimation_ratio=32'b00000000000000000001000000000000
-   Generated name = CIC_72s_4096s
-Running optimization stage 1 on CIC_72s_4096s .......
-@W: CL169 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":92:2:92:7|Pruning unused register d_scaled[71:0]. Make sure that there are no unused intermediate registers.
+	width=32'b00000000000000000000000000111100
+	decimation_ratio=32'b00000000000000000000000100000000
+   Generated name = CIC_60s_256s
+Running optimization stage 1 on CIC_60s_256s .......
 @N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":797:7:797:9|Synthesizing module ND2 in library work.
 Running optimization stage 1 on ND2 .......
 @N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":684:7:684:11|Synthesizing module MULT2 in library work.
@@ -109,66 +108,23 @@ Running optimization stage 1 on MULT2 .......
 Running optimization stage 1 on Multiplier .......
 @W: CL318 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v":8:53:8:58|*Output Result has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\top.v":45:7:45:9|Synthesizing module top in library work.
-@W: CS263 :"C:\Users\alberto\Lattice\FPGARX\top.v":158:7:158:25|Port-width mismatch for port d_in. The port definition is 12 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\alberto\Lattice\FPGARX\top.v":167:7:167:25|Port-width mismatch for port d_in. The port definition is 12 bits, but the actual port connection bit width is 10. Adjust either the definition or the instantiation of this port.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":48:10:48:20|Removing wire o_Tx_Serial, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":53:8:53:11|Removing wire XOut, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":55:8:55:14|Removing wire DiffOut, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":56:8:56:13|Removing wire PWMOut, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":57:8:57:15|Removing wire PWMOutP1, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":58:8:58:15|Removing wire PWMOutP2, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":59:8:59:15|Removing wire PWMOutP3, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":60:8:60:15|Removing wire PWMOutP4, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":61:8:61:15|Removing wire PWMOutN1, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":62:8:62:15|Removing wire PWMOutN2, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":63:8:63:15|Removing wire PWMOutN3, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":64:8:64:15|Removing wire PWMOutN4, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":66:8:66:14|Removing wire sin_out, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":67:8:67:21|Removing wire CIC_out_clkSin, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":68:8:68:15|Removing wire UART_clk, as there is no assignment to it.
-@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":71:11:71:22|Object DelayCounter is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":72:11:72:19|Removing wire i_Tx_Byte, as there is no assignment to it.
 @W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":76:5:76:12|Removing wire o_Rx_DV1, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":77:10:77:19|Removing wire o_Rx_Byte1, as there is no assignment to it.
-@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":80:11:80:24|Object phase_inc_carr is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":85:19:85:28|Removing wire CIC_outSin, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":88:19:88:28|Removing wire CIC_outCos, as there is no assignment to it.
-@W: CG133 :"C:\Users\alberto\Lattice\FPGARX\top.v":94:18:94:30|Object NCO_PLL_Accum is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":97:19:97:32|Removing wire CarrierPLL_out, as there is no assignment to it.
-@W: CG360 :"C:\Users\alberto\Lattice\FPGARX\top.v":99:19:99:26|Removing wire DemodOut, as there is no assignment to it.
 Running optimization stage 1 on top .......
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":48:10:48:20|*Output o_Tx_Serial has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":49:17:49:21|*Output MYLED has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":53:8:53:11|*Output XOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":55:8:55:14|*Output DiffOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":56:8:56:13|*Output PWMOut has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":57:8:57:15|*Output PWMOutP1 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":58:8:58:15|*Output PWMOutP2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":59:8:59:15|*Output PWMOutP3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":60:8:60:15|*Output PWMOutP4 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":61:8:61:15|*Output PWMOutN1 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":62:8:62:15|*Output PWMOutN2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":63:8:63:15|*Output PWMOutN3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":64:8:64:15|*Output PWMOutN4 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":66:8:66:14|*Output sin_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":67:8:67:21|*Output CIC_out_clkSin has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\alberto\Lattice\FPGARX\top.v":68:8:68:15|*Output UART_clk has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL168 :"C:\Users\alberto\Lattice\FPGARX\top.v":181:11:181:16|Removing instance MixerQ because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"C:\Users\alberto\Lattice\FPGARX\top.v":164:44:164:50|Removing instance CIC1Cos because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL177 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Sharing sequential element o_Rx_DV. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL279 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bits 7 to 2 of o_Rx_Byte[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bit 0 of o_Rx_Byte[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 Running optimization stage 2 on top .......
-@W: CL305 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
-@W: CL305 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
-@W: CL279 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Pruning register bits 63 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Register bit phase_inc_carrGen1[0] is always 0.
-@W: CL156 :"C:\Users\alberto\Lattice\FPGARX\top.v":77:10:77:19|*Input o_Rx_Byte1[1] to expression [dff] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[2] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[3] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[4] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[5] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[6] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[7] is always 0.
+@W: CL279 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Pruning register bits 7 to 2 of CICGain[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL156 :"C:\Users\alberto\Lattice\FPGARX\top.v":76:5:76:12|*Input o_Rx_DV1 to expression [dff] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @N: CL159 :"C:\Users\alberto\Lattice\FPGARX\top.v":47:12:47:22|Input i_Rx_Serial is unused.
 Running optimization stage 2 on Multiplier .......
 Running optimization stage 2 on MULT2 .......
 Running optimization stage 2 on ND2 .......
-Running optimization stage 2 on CIC_72s_4096s .......
+Running optimization stage 2 on CIC_60s_256s .......
 Running optimization stage 2 on nco_sig .......
 Running optimization stage 2 on SinCos .......
 Running optimization stage 2 on VLO .......
@@ -189,12 +145,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\alberto\Lattice\FPGARX\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 96MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Oct 19 22:38:22 2024
+# Thu Oct 24 00:57:34 2024
 
 ###########################################################]
 
@@ -215,12 +171,12 @@ Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Oct 19 22:38:22 2024
+# Thu Oct 24 00:57:34 2024
 
 ###########################################################]
 
@@ -235,7 +191,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Oct 19 22:38:22 2024
+# Thu Oct 24 00:57:34 2024
 
 ###########################################################]
 
@@ -257,17 +213,17 @@ Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1
 @N|Running in 64-bit mode
 Options changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Oct 19 22:38:24 2024
+# Thu Oct 24 00:57:36 2024
 
 ###########################################################]
 Premap Report
 
-# Sat Oct 19 22:38:24 2024
+# Thu Oct 24 00:57:36 2024
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -310,62 +266,17 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":67:8:67:21|Tristate driver CIC_out_clkSin (in view: work.top(verilog)) on net CIC_out_clkSin (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":55:8:55:14|Tristate driver DiffOut (in view: work.top(verilog)) on net DiffOut (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[7] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":56:8:56:13|Tristate driver PWMOut (in view: work.top(verilog)) on net PWMOut (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":61:8:61:15|Tristate driver PWMOutN1 (in view: work.top(verilog)) on net PWMOutN1 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":62:8:62:15|Tristate driver PWMOutN2 (in view: work.top(verilog)) on net PWMOutN2 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":63:8:63:15|Tristate driver PWMOutN3 (in view: work.top(verilog)) on net PWMOutN3 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":64:8:64:15|Tristate driver PWMOutN4 (in view: work.top(verilog)) on net PWMOutN4 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":57:8:57:15|Tristate driver PWMOutP1 (in view: work.top(verilog)) on net PWMOutP1 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":58:8:58:15|Tristate driver PWMOutP2 (in view: work.top(verilog)) on net PWMOutP2 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":557:12:557:15|Removing sequential instance FF_9 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":560:12:560:15|Removing sequential instance FF_8 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":564:12:564:15|Removing sequential instance FF_7 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":568:12:568:15|Removing sequential instance FF_6 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":572:12:572:15|Removing sequential instance FF_5 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":576:12:576:15|Removing sequential instance FF_4 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":580:12:580:15|Removing sequential instance FF_3 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":584:12:584:15|Removing sequential instance FF_2 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":588:12:588:15|Removing sequential instance FF_1 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":592:12:592:15|Removing sequential instance FF_0 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance d_clk (in view: work.CIC_72s_4096s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":347:12:347:16|Removing sequential instance FF_19 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":350:12:350:16|Removing sequential instance FF_18 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":353:12:353:16|Removing sequential instance FF_17 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":356:12:356:16|Removing sequential instance FF_16 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":359:12:359:16|Removing sequential instance FF_15 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":362:12:362:16|Removing sequential instance FF_14 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":365:12:365:16|Removing sequential instance FF_13 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":368:12:368:16|Removing sequential instance FF_12 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":371:12:371:16|Removing sequential instance FF_11 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":374:12:374:16|Removing sequential instance FF_10 (in view: work.Multiplier(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":57:2:57:7|Removing sequential instance d_clk_tmp (in view: work.CIC_72s_4096s(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":407:12:407:16|Removing sequential instance FF_22 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":367:12:367:16|Removing sequential instance FF_32 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":371:12:371:16|Removing sequential instance FF_31 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":375:12:375:16|Removing sequential instance FF_30 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":676:14:676:26|Removing instance triglut_1_0_9 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":379:12:379:16|Removing sequential instance FF_29 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":383:12:383:16|Removing sequential instance FF_28 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":682:14:682:26|Removing instance triglut_1_0_8 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":688:14:688:26|Removing instance triglut_1_0_7 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":387:12:387:16|Removing sequential instance FF_27 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":391:12:391:16|Removing sequential instance FF_26 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":694:14:694:26|Removing instance triglut_1_0_6 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":700:14:700:26|Removing instance triglut_1_0_5 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":395:12:395:16|Removing sequential instance FF_25 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":399:12:399:16|Removing sequential instance FF_24 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":706:14:706:26|Removing instance triglut_1_0_4 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":712:14:712:26|Removing instance triglut_1_0_3 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":403:12:403:16|Removing sequential instance FF_23 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":718:14:718:26|Removing instance triglut_1_0_2 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":724:14:724:26|Removing instance triglut_1_0_1 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
-@W: BN114 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":730:14:730:26|Removing instance triglut_1_0_0 (in view: work.SinCos(verilog)) of black box view:LUCENT.ROM256X1A(PRIM) because it does not drive other instances.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[5] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_2 (in view: work.top(verilog)) on net MYLED[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_3 (in view: work.top(verilog)) on net MYLED[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_4 (in view: work.top(verilog)) on net MYLED[2] (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance d_clk (in view: work.CIC_60s_256s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance d_clk (in view: work.CIC_60s_256s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":59:2:59:7|Removing sequential instance d_clk_tmp (in view: work.CIC_60s_256s_1(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":59:2:59:7|Removing sequential instance d_clk_tmp (in view: work.CIC_60s_256s_0(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=26  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 
 
@@ -379,7 +290,7 @@ Level     Clock                          Frequency     Period        Type       
                                                                                                                
 0 -       osc_clk                        2.5 MHz       400.000       virtual      default_clkgroup        0    
                                                                                                                
-0 -       top|osc_clk_inferred_clock     88.7 MHz      11.278        inferred     Inferred_clkgroup_0     1307 
+0 -       top|osc_clk_inferred_clock     88.7 MHz      11.278        inferred     Inferred_clkgroup_0     2329 
 ===============================================================================================================
 
 
@@ -387,17 +298,17 @@ Level     Clock                          Frequency     Period        Type       
 Clock Load Summary
 ***********************
 
-                               Clock     Source                  Clock Pin          Non-clock Pin     Non-clock Pin
-Clock                          Load      Pin                     Seq Example        Seq Example       Comb Example 
--------------------------------------------------------------------------------------------------------------------
-System                         0         -                       -                  -                 -            
-                                                                                                                   
-osc_clk                        0         -                       -                  -                 -            
-                                                                                                                   
-top|osc_clk_inferred_clock     1307      OSCH_inst.OSC(OSCH)     MixerI.FF_0.CK     -                 -            
-===================================================================================================================
+                               Clock     Source                  Clock Pin                      Non-clock Pin     Non-clock Pin
+Clock                          Load      Pin                     Seq Example                    Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------
+System                         0         -                       -                              -                 -            
+                                                                                                                               
+osc_clk                        0         -                       -                              -                 -            
+                                                                                                                               
+top|osc_clk_inferred_clock     2329      OSCH_inst.OSC(OSCH)     phase_inc_carrGen1[63:0].C     -                 -            
+===============================================================================================================================
 
-@W: MT529 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":273:12:273:16|Found inferred clock top|osc_clk_inferred_clock which controls 1307 sequential elements including SinCos1.FF_52. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\alberto\lattice\fpgarx\impl1\source\sincos.v":273:12:273:16|Found inferred clock top|osc_clk_inferred_clock which controls 2329 sequential elements including SinCos1.FF_52. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -411,14 +322,14 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 1307 clock pin(s) of sequential element(s)
-0 instances converted, 1307 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 2329 clock pin(s) of sequential element(s)
+0 instances converted, 2329 sequential instances remain driven by gated/generated clocks
 
-=================================================== Gated/Generated Clocks ====================================================
-Clock Tree ID     Driving Element     Drive Element Type     Unconverted Fanout     Sample Instance     Explanation            
--------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       OSCH_inst.OSC       OSCH                   1307                   MixerI.FF_39        Black box on clock path
-===============================================================================================================================
+======================================================= Gated/Generated Clocks ========================================================
+Clock Tree ID     Driving Element     Drive Element Type     Unconverted Fanout     Sample Instance             Explanation            
+---------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       OSCH_inst.OSC       OSCH                   2329                   phase_inc_carrGen[63:0]     Black box on clock path
+=======================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -426,27 +337,27 @@ Clock Tree ID     Driving Element     Drive Element Type     Unconverted Fanout 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 146MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 60MB peak: 146MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 62MB peak: 147MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Oct 19 22:38:25 2024
+# Thu Oct 24 00:57:37 2024
 
 ###########################################################]
 Map & Optimize Report
 
-# Sat Oct 19 22:38:25 2024
+# Thu Oct 24 00:57:37 2024
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -488,189 +399,220 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":68:8:68:15|Tristate driver UART_clk (in view: work.top(verilog)) on net UART_clk (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":67:8:67:21|Tristate driver CIC_out_clkSin (in view: work.top(verilog)) on net CIC_out_clkSin (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":66:8:66:14|Tristate driver sin_out (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":64:8:64:15|Tristate driver PWMOutN4 (in view: work.top(verilog)) on net PWMOutN4 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":63:8:63:15|Tristate driver PWMOutN3 (in view: work.top(verilog)) on net PWMOutN3 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":62:8:62:15|Tristate driver PWMOutN2 (in view: work.top(verilog)) on net PWMOutN2 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":61:8:61:15|Tristate driver PWMOutN1 (in view: work.top(verilog)) on net PWMOutN1 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":60:8:60:15|Tristate driver PWMOutP4 (in view: work.top(verilog)) on net PWMOutP4 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":59:8:59:15|Tristate driver PWMOutP3 (in view: work.top(verilog)) on net PWMOutP3 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":58:8:58:15|Tristate driver PWMOutP2 (in view: work.top(verilog)) on net PWMOutP2 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[5] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_2 (in view: work.top(verilog)) on net MYLED[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_3 (in view: work.top(verilog)) on net MYLED[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_4 (in view: work.top(verilog)) on net MYLED[2] (in view: work.top(verilog)) has its enable tied to GND.
+@W: BN132 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance phase_inc_carrGen1[63:0] because it is equivalent to instance phase_inc_carrGen[63:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 146MB)
 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[65] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[64] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[63] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[62] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[61] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[60] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[59] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[58] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[57] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[56] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[55] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[54] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[53] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[52] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[51] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[50] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[49] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[48] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[47] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[46] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[45] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[44] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[43] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[29] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[28] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[27] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[26] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[25] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[24] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[23] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[22] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[21] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[20] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[19] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[18] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[17] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[16] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[15] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[14] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[13] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[12] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[11] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[10] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[9] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[8] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[7] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[6] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[5] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[4] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[3] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[2] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[1] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d10[0] (in view: work.top(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Removing sequential instance CIC1Sin.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":92:2:92:7|Boundary register CIC1Sin.d_out[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[53] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[52] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[51] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[50] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[49] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[48] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[47] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[46] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[45] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[44] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[43] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[42] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[41] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[40] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[39] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[38] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[37] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[36] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[35] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[34] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[33] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[32] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[31] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[30] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[29] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[28] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[27] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\alberto\lattice\fpgarx\nco.v":35:0:35:5|Removing sequential instance ncoGen.phase_accum[26] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[19] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[19] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[18] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[18] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[17] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[17] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[16] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[16] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[15] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[15] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[14] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[14] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[13] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[13] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[12] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[12] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[10] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[10] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[9] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[9] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[8] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[8] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[7] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[6] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Sin.d_out[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[19] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[19] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[18] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[18] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[17] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[17] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[16] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[16] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[15] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[15] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[14] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[14] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[13] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[13] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[12] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[12] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[10] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[10] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[9] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[9] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[8] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[8] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[7] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[6] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Boundary register CIC1Cos.d_out[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[7] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[6] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[5] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[4] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[3] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\top.v":230:0:230:5|Removing sequential instance o_Rx_Byte[2] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[29] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[26] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[25] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[24] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[23] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[22] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[21] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[20] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[19] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[18] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[17] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[16] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[15] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[14] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[13] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[12] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[11] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[10] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[9] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[8] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Sin.d10[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[39] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[38] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[37] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[36] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[35] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[34] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[33] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[32] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[31] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\fpgarx\cic.v":94:2:94:7|Removing sequential instance CIC1Cos.d10[30] (in view: work.top(verilog)) because it does not drive other instances.
 
 Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Users\alberto\Lattice\FPGARX\impl1\synlog\FPGARX_impl1_fpga_mapper.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 149MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 147MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 149MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 151MB peak: 153MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 155MB peak: 157MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 151MB peak: 153MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 155MB peak: 157MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 151MB peak: 153MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 154MB peak: 157MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 150MB peak: 153MB)
+Finished preparing to map (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 154MB peak: 157MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 149MB peak: 153MB)
+Finished technology mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 153MB peak: 157MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:06s		     0.20ns		  19 /      1109
-   2		0h:00m:06s		     0.20ns		  19 /      1109
+   1		0h:00m:10s		     0.20ns		  38 /      1838
+   2		0h:00m:10s		     0.20ns		  38 /      1838
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 149MB peak: 153MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 153MB peak: 157MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_2_.un1[0] (in view: work.top(verilog)) on net MYLED[2] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_3_.un1[0] (in view: work.top(verilog)) on net MYLED[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_4_.un1[0] (in view: work.top(verilog)) on net MYLED[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\alberto\lattice\fpgarx\top.v":49:17:49:21|Tristate driver MYLED_obuft_5_.un1[0] (in view: work.top(verilog)) on net MYLED[5] (in view: work.top(verilog)) has its enable tied to GND.
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 149MB peak: 153MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 154MB peak: 157MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:08s; Memory used current: 112MB peak: 153MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 111MB peak: 157MB)
 
 Writing Analyst data base C:\Users\alberto\Lattice\FPGARX\impl1\synwork\FPGARX_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 146MB peak: 153MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 148MB peak: 157MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\alberto\Lattice\FPGARX\impl1\FPGARX_impl1.edi
 N-2018.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 151MB peak: 153MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 153MB peak: 157MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 151MB peak: 153MB)
+Start final timing analysis (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 154MB peak: 157MB)
 
 @W: MT246 :"c:\users\alberto\lattice\fpgarx\impl1\source\multiplier.v":285:8:285:13|Blackbox ND2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock top|osc_clk_inferred_clock with period 11.28ns. Please declare a user-defined clock on net osc_clk.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Oct 19 22:38:39 2024
+# Timing Report written on Thu Oct 24 00:57:53 2024
 #
 
 
@@ -696,7 +638,7 @@ Worst slack in design: 0.200
 Starting Clock                 Frequency     Frequency     Period        Period        Slack     Type         Group              
 ---------------------------------------------------------------------------------------------------------------------------------
 osc_clk                        2.5 MHz       NA            400.000       NA            NA        virtual      default_clkgroup   
-top|osc_clk_inferred_clock     88.7 MHz      107.0 MHz     11.278        9.345         1.933     inferred     Inferred_clkgroup_0
+top|osc_clk_inferred_clock     88.7 MHz      117.8 MHz     11.278        8.488         2.790     inferred     Inferred_clkgroup_0
 System                         100.0 MHz     384.4 MHz     10.000        2.602         7.398     system       system_clkgroup    
 =================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
@@ -715,7 +657,7 @@ Starting                    Ending                      |  constraint  slack  | 
 System                      System                      |  10.000      7.398  |  No paths    -      |  No paths    -      |  No paths    -    
 System                      top|osc_clk_inferred_clock  |  11.278      0.200  |  No paths    -      |  No paths    -      |  No paths    -    
 top|osc_clk_inferred_clock  System                      |  11.278      6.001  |  No paths    -      |  No paths    -      |  No paths    -    
-top|osc_clk_inferred_clock  top|osc_clk_inferred_clock  |  11.278      1.933  |  No paths    -      |  No paths    -      |  No paths    -    
+top|osc_clk_inferred_clock  top|osc_clk_inferred_clock  |  11.278      2.790  |  No paths    -      |  No paths    -      |  No paths    -    
 ==============================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -738,41 +680,41 @@ Detailed Report for Clock: top|osc_clk_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                     Starting                                                               Arrival          
-Instance             Reference                      Type        Pin     Net                 Time        Slack
-                     Clock                                                                                   
--------------------------------------------------------------------------------------------------------------
-CIC1Sin.d1[0]        top|osc_clk_inferred_clock     FD1S3AX     Q       d1_1                1.148       1.933
-CIC1Sin.d2[0]        top|osc_clk_inferred_clock     FD1S3AX     Q       d2_1                1.148       1.933
-CIC1Sin.d3[0]        top|osc_clk_inferred_clock     FD1S3AX     Q       d3_1                1.148       1.933
-CIC1Sin.d4[0]        top|osc_clk_inferred_clock     FD1S3AX     Q       d4_1                1.148       1.933
-CIC1Sin.d5[0]        top|osc_clk_inferred_clock     FD1S3AX     Q       d5_1                1.108       1.973
-CIC1Sin.d6[0]        top|osc_clk_inferred_clock     FD1P3AX     Q       d7_1                1.108       1.973
-CIC1Sin.d7[0]        top|osc_clk_inferred_clock     FD1P3AX     Q       d8_1                1.108       1.973
-CIC1Sin.d8[0]        top|osc_clk_inferred_clock     FD1P3AX     Q       d9_1                1.108       1.973
-CIC1Sin.d_tmp[0]     top|osc_clk_inferred_clock     FD1P3AX     Q       d6_1                1.108       1.973
-MixerI.FF_9          top|osc_clk_inferred_clock     FD1P3DX     Q       MixerOutSin[10]     1.044       2.037
-=============================================================================================================
+                  Starting                                                    Arrival          
+Instance          Reference                      Type        Pin     Net      Time        Slack
+                  Clock                                                                        
+-----------------------------------------------------------------------------------------------
+CIC1Sin.d1[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d1_1     1.148       2.790
+CIC1Cos.d1[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d1_1     1.148       2.790
+CIC1Cos.d2[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d2_1     1.148       2.790
+CIC1Sin.d2[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d2_1     1.148       2.790
+CIC1Sin.d3[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d3_1     1.148       2.790
+CIC1Cos.d3[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d3_1     1.148       2.790
+CIC1Sin.d4[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d4_1     1.148       2.790
+CIC1Cos.d4[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d4_1     1.148       2.790
+CIC1Sin.d5[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d5_1     1.108       2.830
+CIC1Cos.d5[0]     top|osc_clk_inferred_clock     FD1S3AX     Q       d5_1     1.108       2.830
+===============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                    Starting                                                         Required          
-Instance            Reference                      Type        Pin     Net           Time         Slack
-                    Clock                                                                              
--------------------------------------------------------------------------------------------------------
-CIC1Sin.d1[71]      top|osc_clk_inferred_clock     FD1S3AX     D       d1_1[71]      11.172       1.933
-CIC1Sin.d2[71]      top|osc_clk_inferred_clock     FD1S3AX     D       d2_1[71]      11.172       1.933
-CIC1Sin.d3[71]      top|osc_clk_inferred_clock     FD1S3AX     D       d3_1[71]      11.172       1.933
-CIC1Sin.d4[71]      top|osc_clk_inferred_clock     FD1S3AX     D       d4_1[71]      11.172       1.933
-CIC1Sin.d5[71]      top|osc_clk_inferred_clock     FD1S3AX     D       d5_1[71]      11.172       1.933
-CIC1Sin.d6[71]      top|osc_clk_inferred_clock     FD1P3AX     D       d6_1[71]      11.172       1.973
-CIC1Sin.d7[71]      top|osc_clk_inferred_clock     FD1P3AX     D       d7_1[71]      11.172       1.973
-CIC1Sin.d8[71]      top|osc_clk_inferred_clock     FD1P3AX     D       d8_1[71]      11.172       1.973
-CIC1Sin.d9[71]      top|osc_clk_inferred_clock     FD1P3AX     D       d9_1[71]      11.172       1.973
-CIC1Sin.d10[71]     top|osc_clk_inferred_clock     FD1P3AX     D       d10_1[71]     11.172       2.037
-=======================================================================================================
+                   Starting                                                        Required          
+Instance           Reference                      Type        Pin     Net          Time         Slack
+                   Clock                                                                             
+-----------------------------------------------------------------------------------------------------
+CIC1Sin.d1[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d1_1[59]     11.172       2.790
+CIC1Cos.d1[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d1_1[59]     11.172       2.790
+CIC1Cos.d2[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d2_1[59]     11.172       2.790
+CIC1Sin.d2[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d2_1[59]     11.172       2.790
+CIC1Sin.d3[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d3_1[59]     11.172       2.790
+CIC1Cos.d3[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d3_1[59]     11.172       2.790
+CIC1Sin.d4[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d4_1[59]     11.172       2.790
+CIC1Cos.d4[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d4_1[59]     11.172       2.790
+CIC1Sin.d5[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d5_1[59]     11.172       2.790
+CIC1Cos.d5[59]     top|osc_clk_inferred_clock     FD1S3AX     D       d5_1[59]     11.172       2.790
+=====================================================================================================
 
 
 
@@ -786,13 +728,13 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         11.172
 
-    - Propagation time:                      9.239
+    - Propagation time:                      8.383
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 1.933
+    = Slack (non-critical) :                 2.790
 
-    Number of logic level(s):                37
+    Number of logic level(s):                31
     Starting point:                          CIC1Sin.d1[0] / Q
-    Ending point:                            CIC1Sin.d1[71] / D
+    Ending point:                            CIC1Sin.d1[59] / D
     The start point is clocked by            top|osc_clk_inferred_clock [rising] on pin CK
     The end   point is clocked by            top|osc_clk_inferred_clock [rising] on pin CK
 
@@ -891,28 +833,10 @@ d1_1_cry_56               Net         -        -       -         -           1
 CIC1Sin.d1_1_cry_57_0     CCU2D       CIN      In      0.000     6.691       -         
 CIC1Sin.d1_1_cry_57_0     CCU2D       COUT     Out     0.143     6.833       -         
 d1_1_cry_58               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_59_0     CCU2D       CIN      In      0.000     6.833       -         
-CIC1Sin.d1_1_cry_59_0     CCU2D       COUT     Out     0.143     6.976       -         
-d1_1_cry_60               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_61_0     CCU2D       CIN      In      0.000     6.976       -         
-CIC1Sin.d1_1_cry_61_0     CCU2D       COUT     Out     0.143     7.119       -         
-d1_1_cry_62               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_63_0     CCU2D       CIN      In      0.000     7.119       -         
-CIC1Sin.d1_1_cry_63_0     CCU2D       COUT     Out     0.143     7.262       -         
-d1_1_cry_64               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_65_0     CCU2D       CIN      In      0.000     7.262       -         
-CIC1Sin.d1_1_cry_65_0     CCU2D       COUT     Out     0.143     7.405       -         
-d1_1_cry_66               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_67_0     CCU2D       CIN      In      0.000     7.405       -         
-CIC1Sin.d1_1_cry_67_0     CCU2D       COUT     Out     0.143     7.548       -         
-d1_1_cry_68               Net         -        -       -         -           1         
-CIC1Sin.d1_1_cry_69_0     CCU2D       CIN      In      0.000     7.548       -         
-CIC1Sin.d1_1_cry_69_0     CCU2D       COUT     Out     0.143     7.690       -         
-d1_1_cry_70               Net         -        -       -         -           1         
-CIC1Sin.d1_1_s_71_0       CCU2D       CIN      In      0.000     7.690       -         
-CIC1Sin.d1_1_s_71_0       CCU2D       S0       Out     1.549     9.239       -         
-d1_1[71]                  Net         -        -       -         -           1         
-CIC1Sin.d1[71]            FD1S3AX     D        In      0.000     9.239       -         
+CIC1Sin.d1_1_s_59_0       CCU2D       CIN      In      0.000     6.833       -         
+CIC1Sin.d1_1_s_59_0       CCU2D       S0       Out     1.549     8.383       -         
+d1_1[59]                  Net         -        -       -         -           1         
+CIC1Sin.d1[59]            FD1S3AX     D        In      0.000     8.383       -         
 =======================================================================================
 
 
@@ -931,16 +855,16 @@ Starting Points with Worst Slack
 Instance                         Reference     Type      Pin     Net                     Time        Slack
                                  Clock                                                                    
 ----------------------------------------------------------------------------------------------------------
+MixerQ.Multiplier_0_mult_0_4     System        MULT2     CO      mfco                    0.000       0.200
 MixerI.Multiplier_0_mult_0_4     System        MULT2     CO      mfco                    0.000       0.200
+MixerQ.Multiplier_0_mult_2_4     System        MULT2     CO      mfco_1                  0.000       0.343
 MixerI.Multiplier_0_mult_2_4     System        MULT2     CO      mfco_1                  0.000       0.343
+MixerQ.AND2_t19                  System        AND2      Z       Multiplier_0_pp_1_2     0.000       1.035
 MixerI.AND2_t19                  System        AND2      Z       Multiplier_0_pp_1_2     0.000       1.035
 MixerI.Multiplier_0_mult_0_0     System        MULT2     P1      Multiplier_0_pp_0_2     0.000       1.035
+MixerQ.Multiplier_0_mult_0_0     System        MULT2     P1      Multiplier_0_pp_0_2     0.000       1.035
+MixerQ.Multiplier_0_mult_0_1     System        MULT2     P0      Multiplier_0_pp_0_3     0.000       1.178
 MixerI.Multiplier_0_mult_0_1     System        MULT2     P0      Multiplier_0_pp_0_3     0.000       1.178
-MixerI.Multiplier_0_mult_0_1     System        MULT2     P1      Multiplier_0_pp_0_4     0.000       1.178
-MixerI.Multiplier_0_mult_2_0     System        MULT2     P0      Multiplier_0_pp_1_3     0.000       1.178
-MixerI.Multiplier_0_mult_2_0     System        MULT2     P1      Multiplier_0_pp_1_4     0.000       1.178
-MixerI.AND2_t13                  System        AND2      Z       Multiplier_0_pp_3_6     0.000       1.320
-MixerI.Multiplier_0_mult_0_2     System        MULT2     P0      Multiplier_0_pp_0_5     0.000       1.320
 ==========================================================================================================
 
 
@@ -951,16 +875,16 @@ Ending Points with Worst Slack
 Instance        Reference     Type        Pin     Net           Time         Slack
                 Clock                                                             
 ----------------------------------------------------------------------------------
+MixerQ.FF_0     System        FD1P3DX     D       rego_o_19     11.172       0.200
 MixerI.FF_0     System        FD1P3DX     D       rego_o_19     11.172       0.200
+MixerQ.FF_1     System        FD1P3DX     D       rego_o_18     11.172       0.343
 MixerI.FF_1     System        FD1P3DX     D       rego_o_18     11.172       0.343
+MixerQ.FF_2     System        FD1P3DX     D       rego_o_17     11.172       0.343
 MixerI.FF_2     System        FD1P3DX     D       rego_o_17     11.172       0.343
 MixerI.FF_3     System        FD1P3DX     D       rego_o_16     11.172       1.320
+MixerQ.FF_3     System        FD1P3DX     D       rego_o_16     11.172       1.320
 MixerI.FF_4     System        FD1P3DX     D       rego_o_15     11.172       1.320
-MixerI.FF_5     System        FD1P3DX     D       rego_o_14     11.172       1.463
-MixerI.FF_6     System        FD1P3DX     D       rego_o_13     11.172       1.463
-MixerI.FF_7     System        FD1P3DX     D       rego_o_12     11.172       1.606
-MixerI.FF_8     System        FD1P3DX     D       rego_o_11     11.172       1.606
-MixerI.FF_9     System        FD1P3DX     D       rego_o_10     11.172       1.749
+MixerQ.FF_4     System        FD1P3DX     D       rego_o_15     11.172       1.320
 ==================================================================================
 
 
@@ -981,41 +905,41 @@ Path information for path number 1:
     = Slack (critical) :                     0.200
 
     Number of logic level(s):                8
-    Starting point:                          MixerI.Multiplier_0_mult_0_4 / CO
-    Ending point:                            MixerI.FF_0 / D
+    Starting point:                          MixerQ.Multiplier_0_mult_0_4 / CO
+    Ending point:                            MixerQ.FF_0 / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            top|osc_clk_inferred_clock [rising] on pin CK
 
 Instance / Net                                Pin      Pin               Arrival     No. of    
 Name                              Type        Name     Dir     Delay     Time        Fan Out(s)
 -----------------------------------------------------------------------------------------------
-MixerI.Multiplier_0_mult_0_4      MULT2       CO       Out     0.000     0.000       -         
+MixerQ.Multiplier_0_mult_0_4      MULT2       CO       Out     0.000     0.000       -         
 mfco                              Net         -        -       -         -           1         
-MixerI.Multiplier_0_Cadd_0_5      FADD2B      CI       In      0.000     0.000       -         
-MixerI.Multiplier_0_Cadd_0_5      FADD2B      S0       Out     1.549     1.549       -         
+MixerQ.Multiplier_0_Cadd_0_5      FADD2B      CI       In      0.000     0.000       -         
+MixerQ.Multiplier_0_Cadd_0_5      FADD2B      S0       Out     1.549     1.549       -         
 Multiplier_0_pp_0_11              Net         -        -       -         -           1         
-MixerI.Multiplier_0_add_0_6       FADD2B      A0       In      0.000     1.549       -         
-MixerI.Multiplier_0_add_0_6       FADD2B      COUT     Out     1.544     3.094       -         
+MixerQ.Multiplier_0_add_0_6       FADD2B      A0       In      0.000     1.549       -         
+MixerQ.Multiplier_0_add_0_6       FADD2B      COUT     Out     1.544     3.094       -         
 co_Multiplier_0_0_6               Net         -        -       -         -           1         
-MixerI.Multiplier_0_add_0_7       FADD2B      CI       In      0.000     3.094       -         
-MixerI.Multiplier_0_add_0_7       FADD2B      S1       Out     1.549     4.643       -         
+MixerQ.Multiplier_0_add_0_7       FADD2B      CI       In      0.000     3.094       -         
+MixerQ.Multiplier_0_add_0_7       FADD2B      S1       Out     1.549     4.643       -         
 s_Multiplier_0_0_14               Net         -        -       -         -           1         
-MixerI.Multiplier_0_add_2_6       FADD2B      A1       In      0.000     4.643       -         
-MixerI.Multiplier_0_add_2_6       FADD2B      COUT     Out     1.544     6.187       -         
+MixerQ.Multiplier_0_add_2_6       FADD2B      A1       In      0.000     4.643       -         
+MixerQ.Multiplier_0_add_2_6       FADD2B      COUT     Out     1.544     6.187       -         
 co_Multiplier_0_2_6               Net         -        -       -         -           1         
-MixerI.Multiplier_0_add_2_7       FADD2B      CI       In      0.000     6.187       -         
-MixerI.Multiplier_0_add_2_7       FADD2B      S1       Out     1.549     7.736       -         
+MixerQ.Multiplier_0_add_2_7       FADD2B      CI       In      0.000     6.187       -         
+MixerQ.Multiplier_0_add_2_7       FADD2B      S1       Out     1.549     7.736       -         
 s_Multiplier_0_2_16               Net         -        -       -         -           1         
-MixerI.t_Multiplier_0_add_3_5     FADD2B      A1       In      0.000     7.736       -         
-MixerI.t_Multiplier_0_add_3_5     FADD2B      COUT     Out     1.544     9.280       -         
+MixerQ.t_Multiplier_0_add_3_5     FADD2B      A1       In      0.000     7.736       -         
+MixerQ.t_Multiplier_0_add_3_5     FADD2B      COUT     Out     1.544     9.280       -         
 co_t_Multiplier_0_3_5             Net         -        -       -         -           1         
-MixerI.t_Multiplier_0_add_3_6     FADD2B      CI       In      0.000     9.280       -         
-MixerI.t_Multiplier_0_add_3_6     FADD2B      COUT     Out     0.143     9.423       -         
+MixerQ.t_Multiplier_0_add_3_6     FADD2B      CI       In      0.000     9.280       -         
+MixerQ.t_Multiplier_0_add_3_6     FADD2B      COUT     Out     0.143     9.423       -         
 co_t_Multiplier_0_3_6             Net         -        -       -         -           1         
-MixerI.t_Multiplier_0_add_3_7     FADD2B      CI       In      0.000     9.423       -         
-MixerI.t_Multiplier_0_add_3_7     FADD2B      S0       Out     1.549     10.972      -         
+MixerQ.t_Multiplier_0_add_3_7     FADD2B      CI       In      0.000     9.423       -         
+MixerQ.t_Multiplier_0_add_3_7     FADD2B      S0       Out     1.549     10.972      -         
 rego_o_19                         Net         -        -       -         -           1         
-MixerI.FF_0                       FD1P3DX     D        In      0.000     10.972      -         
+MixerQ.FF_0                       FD1P3DX     D        In      0.000     10.972      -         
 ===============================================================================================
 
 
@@ -1025,51 +949,52 @@ MixerI.FF_0                       FD1P3DX     D        In      0.000     10.972 
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 152MB peak: 153MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 154MB peak: 157MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 152MB peak: 153MB)
+Finished timing report (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 154MB peak: 157MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000he-4
 
-Register bits: 1171 of 6864 (17%)
+Register bits: 1971 of 6864 (29%)
 PIC Latch:       0
-I/O cells:       34
+I/O cells:       19
 
 
 Details:
-AND2:           5
-CCU2D:          379
-FADD2B:         46
-FD1P3AX:        726
-FD1P3DX:        62
-FD1S3AX:        376
-FD1S3IX:        1
-FSUB2B:         7
+AND2:           11
+CCU2D:          638
+FADD2B:         90
+FD1P3AX:        1202
+FD1P3DX:        133
+FD1S3AX:        632
+FD1S3IX:        2
+FSUB2B:         11
 GSR:            1
 IB:             10
-INV:            6
-MULT2:          25
-MUX21:          28
-ND2:            18
-OB:             8
-OBZ:            16
-OFS1P3DX:       6
-ORCALUT4:       18
+INV:            9
+MULT2:          50
+MUX21:          48
+ND2:            36
+OB:             5
+OBZ:            4
+OFS1P3DX:       2
+ORCALUT4:       36
 OSCH:           1
 PUR:            1
 ROM16X1A:       3
-ROM256X1A:      10
-VHI:            4
-VLO:            4
+ROM256X1A:      20
+VHI:            6
+VLO:            6
+XOR2:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 36MB peak: 153MB)
+At Mapper Exit (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 36MB peak: 157MB)
 
-Process took 0h:00m:13s realtime, 0h:00m:10s cputime
-# Sat Oct 19 22:38:39 2024
+Process took 0h:00m:16s realtime, 0h:00m:15s cputime
+# Thu Oct 24 00:57:54 2024
 
 ###########################################################]
 
@@ -1086,11 +1011,13 @@ Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="decimation_ratio"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="decimation_ratio"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="decimation_ratio"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="decimation_ratio"  />
 Writing the design to FPGARX_impl1.ngo...
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 16 MB
+Peak Memory Usage: 20 MB
 
 
 ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data"  -p "C:/Users/alberto/Lattice/FPGARX/impl1" -p "C:/Users/alberto/Lattice/FPGARX"  "FPGARX_impl1.ngo" "FPGARX_impl1.ngd"  	
@@ -1115,12 +1042,12 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="2"  />
 
 Design Results:
-   1761 blocks expanded
+   2958 blocks expanded
 Complete the first expansion.
 Writing 'FPGARX_impl1.ngd' ...
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 26 MB
+Peak Memory Usage: 33 MB
 
 
 map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGARX_impl1.ngd" -o "FPGARX_impl1_map.ncd" -pr "FPGARX_impl1.prf" -mp "FPGARX_impl1.mrp" -lpf "C:/Users/alberto/Lattice/FPGARX/impl1/FPGARX_impl1_synplify.lpf" -lpf "C:/Users/alberto/Lattice/FPGARX/FPGARX.lpf" -c 0           
@@ -1153,26 +1080,26 @@ Removing unused logic...
 
 Optimizing...
 
-6 CCU2 constant inputs absorbed.
+12 CCU2 constant inputs absorbed.
 
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="i_Rx_Serial"  />
 
 
 
 Design Summary:
-   Number of registers:   1109 out of  7209 (15%)
-      PFU registers:         1103 out of  6864 (16%)
-      PIO registers:            6 out of   345 (2%)
-   Number of SLICEs:       557 out of  3432 (16%)
-      SLICEs as Logic/ROM:    557 out of  3432 (16%)
+   Number of registers:   1838 out of  7209 (25%)
+      PFU registers:         1836 out of  6864 (27%)
+      PIO registers:            2 out of   345 (1%)
+   Number of SLICEs:       930 out of  3432 (27%)
+      SLICEs as Logic/ROM:    930 out of  3432 (27%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        379 out of  3432 (11%)
-   Number of LUT4s:        778 out of  6864 (11%)
-      Number used as logic LUTs:         20
+      SLICEs as Carry:        638 out of  3432 (19%)
+   Number of LUT4s:        1316 out of  6864 (19%)
+      Number used as logic LUTs:         40
       Number used as distributed RAM:     0
-      Number used as ripple logic:      758
+      Number used as ripple logic:      1276
       Number used as shift registers:     0
-   Number of PIO sites used: 24 + 4(JTAG) out of 115 (24%)
+   Number of PIO sites used: 9 + 4(JTAG) out of 115 (11%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -1196,24 +1123,27 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  1
-     Net osc_clk: 563 loads, 563 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  2
-     Net CIC1Sin.v_comb: 333 loads, 327 LSLICEs
-     Net CIC1Sin/count10: 36 loads, 36 LSLICEs
-   Number of LSRs:  1
+     Net osc_clk: 932 loads, 932 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  4
+     Net CIC1Cos.v_comb: 272 loads, 271 LSLICEs
+     Net CIC1Cos/count10: 30 loads, 30 LSLICEs
+     Net CIC1Sin.v_comb: 272 loads, 271 LSLICEs
+     Net CIC1Sin/count10: 30 loads, 30 LSLICEs
+   Number of LSRs:  2
+     Net CIC1Cos/v_combc_i: 1 loads, 1 LSLICEs
      Net CIC1Sin/v_combc_i: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net CIC1Sin.v_comb: 333 loads
-     Net CIC1Sin/count10: 37 loads
+     Net CIC1Cos.v_comb: 272 loads
+     Net CIC1Sin.v_comb: 272 loads
+     Net CIC1Cos/count10: 31 loads
+     Net CIC1Sin/count10: 31 loads
+     Net CIC1Cos/count[0]: 4 loads
+     Net CIC1Cos/d1_1: 4 loads
+     Net CIC1Cos/d2_1: 4 loads
+     Net CIC1Cos/d3_1: 4 loads
+     Net CIC1Cos/d4_1: 4 loads
      Net CIC1Sin/count[0]: 4 loads
-     Net CIC1Sin/d1_1: 4 loads
-     Net CIC1Sin/d2_1: 4 loads
-     Net CIC1Sin/d3_1: 4 loads
-     Net CIC1Sin/d4_1: 4 loads
-     Net CIC1Sin/count[15]: 3 loads
-     Net CIC1Sin/d5_1: 3 loads
-     Net CIC1Sin/d6_1: 3 loads
  
 
    Number of warnings:  1
@@ -1222,8 +1152,8 @@ Design Summary:
 
 
 Total CPU Time: 1 secs  
-Total REAL Time: 2 secs  
-Peak Memory Usage: 47 MB
+Total REAL Time: 0 secs  
+Peak Memory Usage: 57 MB
 
 Dumping design to file FPGARX_impl1_map.ncd.
 
@@ -1234,13 +1164,13 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FPGARX_impl1_map.ncd"
-Sat Oct 19 22:38:44 2024
+Thu Oct 24 00:58:00 2024
 
 PAR: Place And Route Diamond (64-bit) 3.11.0.396.4.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/alberto/Lattice/FPGARX/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGARX_impl1_map.ncd FPGARX_impl1.dir/5_1.ncd FPGARX_impl1.prf
+Command Line: par -w -l 1 -i 1 -t 1 -c 0 -e 0 -gui -msgset C:/Users/alberto/Lattice/FPGARX/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGARX_impl1_map.ncd FPGARX_impl1.dir/1_1.ncd FPGARX_impl1.prf
 Preference file: FPGARX_impl1.prf.
-Placement level-cost: 5-1.
-Routing Iterations: 6
+Placement level-cost: 1-1.
+Routing Iterations: 1
 
 Loading design for application par from file FPGARX_impl1_map.ncd.
 Design name: top
@@ -1258,44 +1188,46 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   24+4(JTAG)/336     8% used
-                  24+4(JTAG)/115     24% bonded
-   IOLOGIC            6/336           1% used
+   PIO (prelim)    9+4(JTAG)/336     4% used
+                   9+4(JTAG)/115     11% bonded
+   IOLOGIC            2/336          <1% used
 
-   SLICE            557/3432         16% used
+   SLICE            930/3432         27% used
 
    OSC                1/1           100% used
 
 
-Number of Signals: 2158
-Number of Connections: 3868
+Number of Signals: 3589
+Number of Connections: 6413
 
 Pin Constraint Summary:
-   0 out of 24 pins locked (0% locked).
+   0 out of 9 pins locked (0% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    osc_clk (driver: OSCH_inst, clk load #: 563)
+    osc_clk (driver: OSCH_inst, clk load #: 932)
 
 
-The following 2 signals are selected to use the secondary clock routing resources:
-    CIC1Sin.v_comb (driver: CIC1Sin/SLICE_607, clk load #: 0, sr load #: 0, ce load #: 333)
-    CIC1Sin/count10 (driver: CIC1Sin/SLICE_608, clk load #: 0, sr load #: 0, ce load #: 36)
+The following 4 signals are selected to use the secondary clock routing resources:
+    CIC1Cos.v_comb (driver: SLICE_322, clk load #: 0, sr load #: 0, ce load #: 272)
+    CIC1Sin.v_comb (driver: CIC1Sin/SLICE_1024, clk load #: 0, sr load #: 0, ce load #: 272)
+    CIC1Cos/count10 (driver: SLICE_1023, clk load #: 0, sr load #: 0, ce load #: 30)
+    CIC1Sin/count10 (driver: SLICE_1025, clk load #: 0, sr load #: 0, ce load #: 30)
 
 No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-..................
-Finished Placer Phase 0.  REAL time: 4 secs 
+.......
+Finished Placer Phase 0.  REAL time: 3 secs 
 
 Starting Placer Phase 1.
-...................
-Placer score = 225942.
-Finished Placer Phase 1.  REAL time: 9 secs 
+......
+Placer score = 462861.
+Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  216046
-Finished Placer Phase 2.  REAL time: 10 secs 
+Placer score =  456429
+Finished Placer Phase 2.  REAL time: 5 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1307,12 +1239,14 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY "osc_clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 563
-  SECONDARY "CIC1Sin.v_comb" from Q0 on comp "CIC1Sin/SLICE_607" on site "R14C20C", clk load = 0, ce load = 333, sr load = 0
-  SECONDARY "CIC1Sin/count10" from F0 on comp "CIC1Sin/SLICE_608" on site "R14C20B", clk load = 0, ce load = 36, sr load = 0
+  PRIMARY "osc_clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 932
+  SECONDARY "CIC1Cos.v_comb" from Q0 on comp "SLICE_322" on site "R15C22A", clk load = 0, ce load = 272, sr load = 0
+  SECONDARY "CIC1Sin.v_comb" from Q0 on comp "CIC1Sin/SLICE_1024" on site "R22C18B", clk load = 0, ce load = 272, sr load = 0
+  SECONDARY "CIC1Cos/count10" from F0 on comp "SLICE_1023" on site "R14C18D", clk load = 0, ce load = 30, sr load = 0
+  SECONDARY "CIC1Sin/count10" from F0 on comp "SLICE_1025" on site "R25C18A", clk load = 0, ce load = 30, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
-  SECONDARY: 2 out of 8 (25%)
+  SECONDARY: 4 out of 8 (50%)
 
 Edge Clocks:
   No edge clock selected.
@@ -1321,33 +1255,33 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   24 + 4(JTAG) out of 336 (8.3%) PIO sites used.
-   24 + 4(JTAG) out of 115 (24.3%) bonded PIO sites used.
-   Number of PIO comps: 24; differential: 0.
+   9 + 4(JTAG) out of 336 (3.9%) PIO sites used.
+   9 + 4(JTAG) out of 115 (11.3%) bonded PIO sites used.
+   Number of PIO comps: 9; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
-+----------+----------------+------------+-----------+
-| I/O Bank | Usage          | Bank Vccio | Bank Vref |
-+----------+----------------+------------+-----------+
-| 0        | 0 / 28 (  0%)  | -          | -         |
-| 1        | 18 / 29 ( 62%) | 2.5V       | -         |
-| 2        | 6 / 29 ( 20%)  | 2.5V       | -         |
-| 3        | 0 / 9 (  0%)   | -          | -         |
-| 4        | 0 / 10 (  0%)  | -          | -         |
-| 5        | 0 / 10 (  0%)  | -          | -         |
-+----------+----------------+------------+-----------+
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 1 / 28 (  3%) | 2.5V       | -         |
+| 1        | 0 / 29 (  0%) | -          | -         |
+| 2        | 8 / 29 ( 27%) | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)  | -          | -         |
+| 4        | 0 / 10 (  0%) | -          | -         |
+| 5        | 0 / 10 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
 
-Total placer CPU time: 8 secs 
+Total placer CPU time: 4 secs 
 
-Dumping design to file FPGARX_impl1.dir/5_1.ncd.
+Dumping design to file FPGARX_impl1.dir/1_1.ncd.
 
-0 connections routed; 3868 unrouted.
+0 connections routed; 6413 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 13 secs 
+Completed router resource preassignment. Real time: 8 secs 
 
-Start NBR router at 22:38:57 10/19/24
+Start NBR router at 00:58:08 10/24/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1362,56 +1296,65 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:38:57 10/19/24
+Start NBR special constraint process at 00:58:09 10/24/24
 
-Start NBR section for initial routing at 22:38:57 10/19/24
+Start NBR section for initial routing at 00:58:09 10/24/24
 Level 1, iteration 1
-0(0.00%) conflict; 1891(48.89%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.980ns/0.000ns; real time: 14 secs 
+0(0.00%) conflict; 3146(49.06%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.689ns/0.000ns; real time: 10 secs 
 Level 2, iteration 1
-6(0.00%) conflicts; 1859(48.06%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.967ns/0.000ns; real time: 14 secs 
+0(0.00%) conflict; 3145(49.04%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.689ns/0.000ns; real time: 10 secs 
 Level 3, iteration 1
-64(0.02%) conflicts; 1202(31.08%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.967ns/0.000ns; real time: 15 secs 
+70(0.02%) conflicts; 2151(33.54%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.689ns/0.000ns; real time: 11 secs 
 Level 4, iteration 1
-141(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 16 secs 
+257(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 13 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:39:00 10/19/24
+Start NBR section for normal routing at 00:58:13 10/24/24
 Level 1, iteration 1
-23(0.01%) conflicts; 127(3.28%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 16 secs 
+25(0.01%) conflicts; 244(3.80%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 13 secs 
 Level 2, iteration 1
-18(0.00%) conflicts; 130(3.36%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 17 secs 
+22(0.01%) conflicts; 248(3.87%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 13 secs 
 Level 3, iteration 1
-17(0.00%) conflicts; 120(3.10%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 17 secs 
+24(0.01%) conflicts; 238(3.71%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 13 secs 
 Level 4, iteration 1
-61(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 17 secs 
+141(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 14 secs 
 Level 4, iteration 2
-35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 17 secs 
+80(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 15 secs 
 Level 4, iteration 3
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 18 secs 
+15(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 15 secs 
 Level 4, iteration 4
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 15 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 15 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 15 secs 
+Level 4, iteration 7
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 16 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:39:02 10/19/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 00:58:16 10/24/24
 
-Start NBR section for re-routing at 22:39:02 10/19/24
+Start NBR section for re-routing at 00:58:17 10/24/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.960ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 1.681ns/0.000ns; real time: 17 secs 
 
-Start NBR section for post-routing at 22:39:02 10/19/24
+Start NBR section for post-routing at 00:58:17 10/24/24
 
 End NBR router with 0 unrouted connection
 
@@ -1419,7 +1362,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 0.960ns
+  Estimated worst slack<setup> : 1.681ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -1427,20 +1370,20 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 18 secs 
-Total REAL time: 20 secs 
+Total REAL time: 19 secs 
 Completely routed.
-End of route.  3868 routed (100.00%); 0 unrouted.
+End of route.  6413 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
 Timing score: 0 
 
-Dumping design to file FPGARX_impl1.dir/5_1.ncd.
+Dumping design to file FPGARX_impl1.dir/1_1.ncd.
 
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 0.960
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 1.681
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.306
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
@@ -1484,7 +1427,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
-Sat Oct 19 22:39:06 2024
+Thu Oct 24 00:58:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1513,11 +1456,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 47025 paths, 1 nets, and 3868 connections (100.00% coverage)
+Constraints cover 65022 paths, 1 nets, and 6413 connections (100.00% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
-Sat Oct 19 22:39:06 2024
+Thu Oct 24 00:58:21 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1546,7 +1489,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 47025 paths, 1 nets, and 3868 connections (100.00% coverage)
+Constraints cover 65022 paths, 1 nets, and 6413 connections (100.00% coverage)
 
 
 
@@ -1562,7 +1505,7 @@ Cumulative negative slack: 0 (0+0)
 
 Total CPU Time: 1 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 75 MB
+Peak Memory Usage: 81 MB
 
 
 iotiming  "FPGARX_impl1.ncd" "FPGARX_impl1.prf"

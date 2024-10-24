@@ -1,2 +1,2 @@
-@E: CS187 :"C:\Users\alberto\Lattice\FPGARX\top.v":266:0:266:1|Expecting endmodule
+@E: CG906 :"C:\Users\alberto\Lattice\FPGARX\top.v":235:12:235:19|Reference to unknown variable o_Rx_DV1.
 

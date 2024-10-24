@@ -8,31 +8,31 @@
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
             <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1729370324">
-            <Task name="Map" build_result="2" update_result="0" update_time="1729370324"/>
+        <Milestone name="Map" build_result="0" build_time="0">
+            <Task name="Map" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1729370345">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1729370345"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1729370346"/>
-            <Task name="IOTiming" build_result="2" update_result="0" update_time="1729370350"/>
+        <Milestone name="PAR" build_result="0" build_time="0">
+            <Task name="PAR" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1729370321">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1729370321"/>
+        <Milestone name="Synthesis" build_result="0" build_time="0">
+            <Task name="Synplify_Synthesis" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1729292102"/>
+            <Task name="HDLE" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1729370322">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1729370322"/>
+        <Milestone name="Translate" build_result="0" build_time="0">
+            <Task name="Translate" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="FPGARX_impl1.edi" last_build_time="1729370318" last_build_size="961490"/>
-        <Report name="FPGARX_impl1.ior" last_build_time="1729370350" last_build_size="2055"/>
-        <Report name="FPGARX_impl1.ncd" last_build_time="1729370345" last_build_size="1085462"/>
-        <Report name="FPGARX_impl1.ngd" last_build_time="1729370322" last_build_size="1016472"/>
-        <Report name="FPGARX_impl1.twr" last_build_time="1729370346" last_build_size="96568"/>
-        <Report name="FPGARX_impl1_map.ncd" last_build_time="1729370324" last_build_size="741722"/>
+        <Report name="FPGARX_impl1.edi" last_build_time="1729724272" last_build_size="1631353"/>
+        <Report name="FPGARX_impl1.ior" last_build_time="1729724306" last_build_size="1955"/>
+        <Report name="FPGARX_impl1.ncd" last_build_time="1729724300" last_build_size="1801465"/>
+        <Report name="FPGARX_impl1.ngd" last_build_time="1729724277" last_build_size="1647951"/>
+        <Report name="FPGARX_impl1.twr" last_build_time="1729724301" last_build_size="85395"/>
+        <Report name="FPGARX_impl1_map.ncd" last_build_time="1729724279" last_build_size="1216951"/>
     </Strategy>
 </BuildStatus>

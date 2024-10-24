@@ -13,7 +13,7 @@ Hostname: DESKTOP-LI6GKLP
 
 Implementation : impl1
 
-# Written on Sat Oct 19 22:38:24 2024
+# Written on Thu Oct 24 00:57:36 2024
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\alberto\Lattice\FPGARX\sdc1.fdc"
@@ -37,19 +37,19 @@ Level     Clock                          Frequency     Period        Type       
                                                                                                                
 0 -       osc_clk                        2.5 MHz       400.000       virtual      default_clkgroup        0    
                                                                                                                
-0 -       top|osc_clk_inferred_clock     88.7 MHz      11.278        inferred     Inferred_clkgroup_0     1307 
+0 -       top|osc_clk_inferred_clock     88.7 MHz      11.278        inferred     Inferred_clkgroup_0     2329 
 ===============================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                               Clock     Source                  Clock Pin          Non-clock Pin     Non-clock Pin
-Clock                          Load      Pin                     Seq Example        Seq Example       Comb Example 
--------------------------------------------------------------------------------------------------------------------
-System                         0         -                       -                  -                 -            
-                                                                                                                   
-osc_clk                        0         -                       -                  -                 -            
-                                                                                                                   
-top|osc_clk_inferred_clock     1307      OSCH_inst.OSC(OSCH)     MixerI.FF_0.CK     -                 -            
-===================================================================================================================
+                               Clock     Source                  Clock Pin                      Non-clock Pin     Non-clock Pin
+Clock                          Load      Pin                     Seq Example                    Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------
+System                         0         -                       -                              -                 -            
+                                                                                                                               
+osc_clk                        0         -                       -                              -                 -            
+                                                                                                                               
+top|osc_clk_inferred_clock     2329      OSCH_inst.OSC(OSCH)     phase_inc_carrGen1[63:0].C     -                 -            
+===============================================================================================================================

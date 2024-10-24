@@ -14,12 +14,17 @@
 @N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\SinCos.v":8:7:8:12|Synthesizing module SinCos in library work.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\NCO.v":13:7:13:13|Synthesizing module nco_sig in library work.
-@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":20:7:20:9|Synthesizing module CIC in library work.
+@N: CG364 :"C:\Users\alberto\Lattice\FPGARX\CIC.v":23:7:23:9|Synthesizing module CIC in library work.
 @N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":797:7:797:9|Synthesizing module ND2 in library work.
 @N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":684:7:684:11|Synthesizing module MULT2 in library work.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\impl1\source\Multiplier.v":8:7:8:16|Synthesizing module Multiplier in library work.
 @N: CG364 :"C:\Users\alberto\Lattice\FPGARX\top.v":45:7:45:9|Synthesizing module top in library work.
-@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":227:0:227:5|Register bit phase_inc_carrGen1[0] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[2] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[3] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[4] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[5] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[6] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\FPGARX\top.v":230:0:230:5|Register bit CICGain[7] is always 0.
 @N: CL159 :"C:\Users\alberto\Lattice\FPGARX\top.v":47:12:47:22|Input i_Rx_Serial is unused.
 @N|Running in 64-bit mode
 

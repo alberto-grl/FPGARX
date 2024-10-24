@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Oct 19 22:38:44 2024
+Thu Oct 24 00:58:00 2024
 
 C:/lscc/diamond/3.11_x64/ispfpga\bin\nt64\par -f FPGARX_impl1.p2t
 FPGARX_impl1_map.ncd FPGARX_impl1.dir FPGARX_impl1.prf -gui -msgset
@@ -16,7 +16,7 @@ Preference file: FPGARX_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            0.960        0            0.306        0            20           Completed
+1_1   *      0            1.681        0            0.306        0            19           Completed
 
 * : Design saved.
 

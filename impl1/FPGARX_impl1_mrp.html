@@ -23,23 +23,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
-Mapped on:  10/19/24  22:38:42
+Mapped on:  10/24/24  00:57:58
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   1109 out of  7209 (15%)
-      PFU registers:         1103 out of  6864 (16%)
-      PIO registers:            6 out of   345 (2%)
-   Number of SLICEs:       557 out of  3432 (16%)
-      SLICEs as Logic/ROM:    557 out of  3432 (16%)
+   Number of registers:   1838 out of  7209 (25%)
+      PFU registers:         1836 out of  6864 (27%)
+      PIO registers:            2 out of   345 (1%)
+   Number of SLICEs:       930 out of  3432 (27%)
+      SLICEs as Logic/ROM:    930 out of  3432 (27%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        379 out of  3432 (11%)
-   Number of LUT4s:        778 out of  6864 (11%)
-      Number used as logic LUTs:         20
+      SLICEs as Carry:        638 out of  3432 (19%)
+   Number of LUT4s:        1316 out of  6864 (19%)
+      Number used as logic LUTs:         40
       Number used as distributed RAM:     0
-      Number used as ripple logic:      758
+      Number used as ripple logic:      1276
       Number used as shift registers:     0
-   Number of PIO sites used: 24 + 4(JTAG) out of 115 (24%)
+   Number of PIO sites used: 9 + 4(JTAG) out of 115 (11%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -65,25 +65,28 @@ Mapped on:  10/19/24  22:38:42
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net osc_clk: 563 loads, 563 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  2
+     Net osc_clk: 932 loads, 932 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  4
 
-     Net CIC1Sin.v_comb: 333 loads, 327 LSLICEs
-     Net CIC1Sin/count10: 36 loads, 36 LSLICEs
-   Number of LSRs:  1
+     Net CIC1Cos.v_comb: 272 loads, 271 LSLICEs
+     Net CIC1Cos/count10: 30 loads, 30 LSLICEs
+     Net CIC1Sin.v_comb: 272 loads, 271 LSLICEs
+     Net CIC1Sin/count10: 30 loads, 30 LSLICEs
+   Number of LSRs:  2
+     Net CIC1Cos/v_combc_i: 1 loads, 1 LSLICEs
      Net CIC1Sin/v_combc_i: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net CIC1Sin.v_comb: 333 loads
-     Net CIC1Sin/count10: 37 loads
+     Net CIC1Cos.v_comb: 272 loads
+     Net CIC1Sin.v_comb: 272 loads
+     Net CIC1Cos/count10: 31 loads
+     Net CIC1Sin/count10: 31 loads
+     Net CIC1Cos/count[0]: 4 loads
+     Net CIC1Cos/d1_1: 4 loads
+     Net CIC1Cos/d2_1: 4 loads
+     Net CIC1Cos/d3_1: 4 loads
+     Net CIC1Cos/d4_1: 4 loads
      Net CIC1Sin/count[0]: 4 loads
-     Net CIC1Sin/d1_1: 4 loads
-     Net CIC1Sin/d2_1: 4 loads
-     Net CIC1Sin/d3_1: 4 loads
-     Net CIC1Sin/d4_1: 4 loads
-     Net CIC1Sin/count[15]: 3 loads
-     Net CIC1Sin/d5_1: 3 loads
-     Net CIC1Sin/d6_1: 3 loads
 
 
 
@@ -108,53 +111,23 @@ WARNING - map: IO buffer missing for top level port i_Rx_Serial...logic will be
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| o_Tx_Serial         | OUTPUT    | LVCMOS25  |            |
+| MYLED[2]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MYLED[0]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| UART_clk            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| CIC_out_clkSin      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| sin_out             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | sinGen              | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutN4            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutN3            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutN2            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutN1            | OUTPUT    | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| PWMOutP4            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutP3            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutP2            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOutP1            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| PWMOut              | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| DiffOut             | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| XOut                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MYLED[7]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MYLED[6]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[5]            | OUTPUT    | LVCMOS25  | OUT        |
+| MYLED[5]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[4]            | OUTPUT    | LVCMOS25  | OUT        |
+| MYLED[4]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[3]            | OUTPUT    | LVCMOS25  | OUT        |
+| MYLED[3]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[2]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
+
 | MYLED[1]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 
@@ -171,21 +144,38 @@ Block RFIn_pad[6] undriven or does not drive anything - clipped.
 Block RFIn_pad[7] undriven or does not drive anything - clipped.
 Block RFIn_pad[8] undriven or does not drive anything - clipped.
 Block RFIn_pad[9] undriven or does not drive anything - clipped.
+Block SinCos1/INV_2 undriven or does not drive anything - clipped.
+Block SinCos1/INV_11 undriven or does not drive anything - clipped.
 Block SinCos1/INV_12 undriven or does not drive anything - clipped.
 Block SinCos1/INV_21 undriven or does not drive anything - clipped.
 Block SinCos1/INV_22 undriven or does not drive anything - clipped.
 Block SinCos1/INV_29 undriven or does not drive anything - clipped.
 Block SinCos1/INV_1 undriven or does not drive anything - clipped.
 Block SinCos1/AND2_t0 undriven or does not drive anything - clipped.
+Block SinCos1/XOR2_t1 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_3 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_2 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_1 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_0 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_s_n_5 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_s_n_4 undriven or does not drive anything - clipped.
 Block SinCos1/neg_rom_dout_s_n_3 undriven or does not drive anything - clipped.
 Block SinCos1/neg_rom_dout_s_n_2 undriven or does not drive anything - clipped.
 Block SinCos1/neg_rom_dout_s_n_1 undriven or does not drive anything - clipped.
 Block SinCos1/neg_rom_dout_s_n_0 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_1 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_2 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_3 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_4 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_5 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_6 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_7 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_8 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_10 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_11 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_12 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_13 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_14 undriven or does not drive anything - clipped.
-
 Block SinCos1/triglut_1_0_15 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_16 undriven or does not drive anything - clipped.
 Block SinCos1/triglut_1_0_17 undriven or does not drive anything - clipped.
@@ -195,11 +185,22 @@ Block SinCos1/neg_rom_addr0_r_n_4 undriven or does not drive anything - clipped.
 Block SinCos1/neg_rom_addr0_r_n_3 undriven or does not drive anything - clipped.
      
 Block SinCos1/neg_rom_addr0_r_n_2 undriven or does not drive anything - clipped.
+
      
 Block SinCos1/neg_rom_addr0_r_n_1 undriven or does not drive anything - clipped.
      
 Block SinCos1/neg_rom_addr0_r_n_0 undriven or does not drive anything - clipped.
      
+Block SinCos1/FF_1 undriven or does not drive anything - clipped.
+Block SinCos1/FF_2 undriven or does not drive anything - clipped.
+Block SinCos1/FF_3 undriven or does not drive anything - clipped.
+Block SinCos1/FF_4 undriven or does not drive anything - clipped.
+Block SinCos1/FF_5 undriven or does not drive anything - clipped.
+Block SinCos1/FF_6 undriven or does not drive anything - clipped.
+Block SinCos1/FF_7 undriven or does not drive anything - clipped.
+Block SinCos1/FF_8 undriven or does not drive anything - clipped.
+Block SinCos1/FF_9 undriven or does not drive anything - clipped.
+Block SinCos1/FF_10 undriven or does not drive anything - clipped.
 Block SinCos1/FF_11 undriven or does not drive anything - clipped.
 Block SinCos1/FF_12 undriven or does not drive anything - clipped.
 Block SinCos1/FF_13 undriven or does not drive anything - clipped.
@@ -209,6 +210,16 @@ Block SinCos1/FF_16 undriven or does not drive anything - clipped.
 Block SinCos1/FF_17 undriven or does not drive anything - clipped.
 Block SinCos1/FF_18 undriven or does not drive anything - clipped.
 Block SinCos1/FF_19 undriven or does not drive anything - clipped.
+Block SinCos1/muxb_1/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_2/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_3/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_4/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_5/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_6/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_7/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_8/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_9/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_10/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_11/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_12/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_13/GATE undriven or does not drive anything - clipped.
@@ -219,8 +230,19 @@ Block SinCos1/muxb_17/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_18/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_19/GATE undriven or does not drive anything - clipped.
 Block SinCos1/FF_20 undriven or does not drive anything - clipped.
+Block SinCos1/muxb_20/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_21/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_22/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_23/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_24/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_25/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_26/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_27/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_28/GATE undriven or does not drive anything - clipped.
+Block SinCos1/muxb_29/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_30/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_31/GATE undriven or does not drive anything - clipped.
+
 Block SinCos1/muxb_32/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_33/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_34/GATE undriven or does not drive anything - clipped.
@@ -230,6 +252,17 @@ Block SinCos1/muxb_37/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_38/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_39/GATE undriven or does not drive anything - clipped.
 Block SinCos1/FF_21 undriven or does not drive anything - clipped.
+Block SinCos1/FF_22 undriven or does not drive anything - clipped.
+Block SinCos1/FF_23 undriven or does not drive anything - clipped.
+Block SinCos1/FF_24 undriven or does not drive anything - clipped.
+Block SinCos1/FF_25 undriven or does not drive anything - clipped.
+Block SinCos1/FF_26 undriven or does not drive anything - clipped.
+Block SinCos1/FF_27 undriven or does not drive anything - clipped.
+Block SinCos1/FF_28 undriven or does not drive anything - clipped.
+Block SinCos1/FF_29 undriven or does not drive anything - clipped.
+Block SinCos1/FF_30 undriven or does not drive anything - clipped.
+Block SinCos1/FF_31 undriven or does not drive anything - clipped.
+Block SinCos1/FF_32 undriven or does not drive anything - clipped.
 Block SinCos1/FF_33 undriven or does not drive anything - clipped.
 Block SinCos1/FF_34 undriven or does not drive anything - clipped.
 Block SinCos1/FF_35 undriven or does not drive anything - clipped.
@@ -242,7 +275,6 @@ Block SinCos1/FF_41 undriven or does not drive anything - clipped.
 Block SinCos1/FF_42 undriven or does not drive anything - clipped.
 Block SinCos1/muxb_40/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_41/GATE undriven or does not drive anything - clipped.
-
 Block SinCos1/muxb_42/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_43/GATE undriven or does not drive anything - clipped.
 Block SinCos1/muxb_44/GATE undriven or does not drive anything - clipped.
@@ -261,12 +293,13 @@ Block SinCos1/FF_51 undriven or does not drive anything - clipped.
 Block SinCos1/FF_52 undriven or does not drive anything - clipped.
 Block SinCos1/LUT4_1 undriven or does not drive anything - clipped.
 Block SinCos1/LUT4_2 undriven or does not drive anything - clipped.
-Block SinCos1/muxb_10/GATE undriven or does not drive anything - clipped.
-Block SinCos1/neg_rom_dout_s_n_5 undriven or does not drive anything - clipped.
-Block SinCos1/neg_rom_dout_s_n_4 undriven or does not drive anything - clipped.
-Block SinCos1/FF_10 undriven or does not drive anything - clipped.
+Block SinCos1/muxb_0/GATE undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_5 undriven or does not drive anything - clipped.
+Block SinCos1/neg_rom_dout_c_n_4 undriven or does not drive anything - clipped.
+Block SinCos1/FF_0 undriven or does not drive anything - clipped.
 Block SinCos1/LUT4_0 undriven or does not drive anything - clipped.
-Block SinCos1/triglut_1_0_10 undriven or does not drive anything - clipped.
+Block SinCos1/triglut_1_0_0 undriven or does not drive anything - clipped.
+
 Block MixerI/VCC undriven or does not drive anything - clipped.
 Block MixerI/ND2_t20 undriven or does not drive anything - clipped.
 Block MixerI/ND2_t18 undriven or does not drive anything - clipped.
@@ -299,7 +332,6 @@ Block MixerI/Multiplier_0_mult_6_4 undriven or does not drive anything -
 Block MixerI/Multiplier_0_mult_6_3 undriven or does not drive anything -
      clipped.
 Block MixerI/Multiplier_0_mult_6_2 undriven or does not drive anything -
-
      clipped.
 Block MixerI/Multiplier_0_mult_6_1 undriven or does not drive anything -
      clipped.
@@ -324,6 +356,7 @@ Block MixerI/Multiplier_0_mult_2_2 undriven or does not drive anything -
 Block MixerI/Multiplier_0_mult_2_1 undriven or does not drive anything -
      clipped.
 Block MixerI/Multiplier_0_mult_2_0 undriven or does not drive anything -
+
      clipped.
 Block MixerI/Multiplier_0_mult_0_4 undriven or does not drive anything -
      clipped.
@@ -356,7 +389,6 @@ Block MixerI/Multiplier_0_add_2_8 undriven or does not drive anything - clipped.
 Block MixerI/Multiplier_0_add_2_7 undriven or does not drive anything - clipped.
      
 Block MixerI/Multiplier_0_add_2_6 undriven or does not drive anything - clipped.
-
      
 Block MixerI/Multiplier_0_add_2_5 undriven or does not drive anything - clipped.
      
@@ -381,6 +413,7 @@ Block MixerI/Multiplier_0_add_1_4 undriven or does not drive anything - clipped.
 Block MixerI/Multiplier_0_add_1_3 undriven or does not drive anything - clipped.
      
 Block MixerI/Multiplier_0_add_1_2 undriven or does not drive anything - clipped.
+
      
 Block MixerI/Cadd_Multiplier_0_1_1 undriven or does not drive anything -
      clipped.
@@ -413,7 +446,6 @@ Block MixerI/Multiplier_0_Cadd_4_5 undriven or does not drive anything -
 Block MixerI/Multiplier_0_cin_lr_add_4 undriven or does not drive anything -
      clipped.
 Block MixerI/Multiplier_0_Cadd_2_5 undriven or does not drive anything -
-
      clipped.
 Block MixerI/Multiplier_0_cin_lr_add_2 undriven or does not drive anything -
      clipped.
@@ -431,6 +463,17 @@ Block MixerI/FF_6 undriven or does not drive anything - clipped.
 Block MixerI/FF_7 undriven or does not drive anything - clipped.
 Block MixerI/FF_8 undriven or does not drive anything - clipped.
 Block MixerI/FF_9 undriven or does not drive anything - clipped.
+Block MixerI/FF_10 undriven or does not drive anything - clipped.
+Block MixerI/FF_11 undriven or does not drive anything - clipped.
+Block MixerI/FF_12 undriven or does not drive anything - clipped.
+Block MixerI/FF_13 undriven or does not drive anything - clipped.
+Block MixerI/FF_14 undriven or does not drive anything - clipped.
+Block MixerI/FF_15 undriven or does not drive anything - clipped.
+Block MixerI/FF_16 undriven or does not drive anything - clipped.
+
+Block MixerI/FF_17 undriven or does not drive anything - clipped.
+Block MixerI/FF_18 undriven or does not drive anything - clipped.
+Block MixerI/FF_19 undriven or does not drive anything - clipped.
 Block MixerI/FF_20 undriven or does not drive anything - clipped.
 Block MixerI/FF_21 undriven or does not drive anything - clipped.
 Block MixerI/FF_22 undriven or does not drive anything - clipped.
@@ -453,11 +496,209 @@ Block MixerI/FF_38 undriven or does not drive anything - clipped.
 Block MixerI/FF_39 undriven or does not drive anything - clipped.
 Block MixerI/Multiplier_0_mult_8_4 undriven or does not drive anything -
      clipped.
+Block MixerQ/VCC undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t21 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t20 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t18 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t17 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t15 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t14 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t12 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t11 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t9 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t8 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t7 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t6 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t5 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t4 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t3 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t2 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t1 undriven or does not drive anything - clipped.
+Block MixerQ/ND2_t0 undriven or does not drive anything - clipped.
+Block MixerQ/Multiplier_0_mult_8_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_8_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_8_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_8_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_8_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_6_4 undriven or does not drive anything -
+     clipped.
+
+Block MixerQ/Multiplier_0_mult_6_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_6_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_6_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_6_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_4_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_4_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_4_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_4_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_4_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_2_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_2_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_2_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_2_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_2_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_0_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_0_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_0_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_0_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_mult_0_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_7 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_6 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_5 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_3 undriven or does not drive anything -
+     clipped.
+Block MixerQ/t_Multiplier_0_add_3_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Cadd_t_Multiplier_0_3_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_add_2_9 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_8 undriven or does not drive anything - clipped.
+     
+
+Block MixerQ/Multiplier_0_add_2_7 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_6 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_5 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_4 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_3 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_2_2 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Cadd_Multiplier_0_2_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Cadd_Multiplier_0_1_8 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_add_1_7 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_1_6 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_1_5 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_1_4 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_1_3 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_1_2 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Cadd_Multiplier_0_1_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Cadd_Multiplier_0_0_8 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_add_0_7 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_0_6 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_0_5 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_0_4 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_0_3 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Multiplier_0_add_0_2 undriven or does not drive anything - clipped.
+     
+Block MixerQ/Cadd_Multiplier_0_0_1 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_Cadd_8_5 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_cin_lr_add_8 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_Cadd_6_5 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_cin_lr_add_6 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_Cadd_4_5 undriven or does not drive anything -
+     clipped.
+
+Block MixerQ/Multiplier_0_cin_lr_add_4 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_Cadd_2_5 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_cin_lr_add_2 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_Cadd_0_5 undriven or does not drive anything -
+     clipped.
+Block MixerQ/Multiplier_0_cin_lr_add_0 undriven or does not drive anything -
+     clipped.
+Block MixerQ/FF_0 undriven or does not drive anything - clipped.
+Block MixerQ/FF_1 undriven or does not drive anything - clipped.
+Block MixerQ/FF_2 undriven or does not drive anything - clipped.
+Block MixerQ/FF_3 undriven or does not drive anything - clipped.
+Block MixerQ/FF_4 undriven or does not drive anything - clipped.
+Block MixerQ/FF_5 undriven or does not drive anything - clipped.
+Block MixerQ/FF_6 undriven or does not drive anything - clipped.
+Block MixerQ/FF_7 undriven or does not drive anything - clipped.
+Block MixerQ/FF_8 undriven or does not drive anything - clipped.
+Block MixerQ/FF_9 undriven or does not drive anything - clipped.
+Block MixerQ/FF_10 undriven or does not drive anything - clipped.
+Block MixerQ/FF_11 undriven or does not drive anything - clipped.
+Block MixerQ/FF_12 undriven or does not drive anything - clipped.
+Block MixerQ/FF_13 undriven or does not drive anything - clipped.
+Block MixerQ/FF_14 undriven or does not drive anything - clipped.
+Block MixerQ/FF_15 undriven or does not drive anything - clipped.
+Block MixerQ/FF_16 undriven or does not drive anything - clipped.
+Block MixerQ/FF_17 undriven or does not drive anything - clipped.
+Block MixerQ/FF_18 undriven or does not drive anything - clipped.
+Block MixerQ/FF_19 undriven or does not drive anything - clipped.
+Block MixerQ/FF_20 undriven or does not drive anything - clipped.
+Block MixerQ/FF_21 undriven or does not drive anything - clipped.
+Block MixerQ/FF_22 undriven or does not drive anything - clipped.
+Block MixerQ/FF_23 undriven or does not drive anything - clipped.
+Block MixerQ/FF_24 undriven or does not drive anything - clipped.
+Block MixerQ/FF_25 undriven or does not drive anything - clipped.
+Block MixerQ/FF_26 undriven or does not drive anything - clipped.
+Block MixerQ/FF_27 undriven or does not drive anything - clipped.
+Block MixerQ/FF_28 undriven or does not drive anything - clipped.
+Block MixerQ/FF_29 undriven or does not drive anything - clipped.
+Block MixerQ/FF_30 undriven or does not drive anything - clipped.
+Block MixerQ/FF_31 undriven or does not drive anything - clipped.
+Block MixerQ/FF_32 undriven or does not drive anything - clipped.
+Block MixerQ/FF_33 undriven or does not drive anything - clipped.
+Block MixerQ/FF_34 undriven or does not drive anything - clipped.
+Block MixerQ/FF_35 undriven or does not drive anything - clipped.
+Block MixerQ/FF_36 undriven or does not drive anything - clipped.
+Block MixerQ/FF_37 undriven or does not drive anything - clipped.
+Block MixerQ/FF_38 undriven or does not drive anything - clipped.
+Block MixerQ/FF_39 undriven or does not drive anything - clipped.
 Block RFIn_pad[0] undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal CIC1Sin/d1_1[0] was merged into signal CIC1Sin/d1_1
+Signal CIC1Cos/d1_1[0] was merged into signal CIC1Cos/d1_1
 Signal RFIn[1] undriven or does not drive anything - clipped.
 Signal RFIn[2] undriven or does not drive anything - clipped.
+
 Signal RFIn[3] undriven or does not drive anything - clipped.
 Signal RFIn[4] undriven or does not drive anything - clipped.
 Signal RFIn[5] undriven or does not drive anything - clipped.
@@ -466,17 +707,33 @@ Signal RFIn[7] undriven or does not drive anything - clipped.
 Signal RFIn[8] undriven or does not drive anything - clipped.
 Signal RFIn[9] undriven or does not drive anything - clipped.
 Signal SinCos1/lx_ne0_inv undriven or does not drive anything - clipped.
+Signal SinCos1/co2_2 undriven or does not drive anything - clipped.
+Signal SinCos1/co1_2 undriven or does not drive anything - clipped.
+Signal SinCos1/co0_2 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_10_inv undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_9_inv undriven or does not drive anything - clipped.
+Signal SinCos1/co4 undriven or does not drive anything - clipped.
+Signal SinCos1/co3_1 undriven or does not drive anything - clipped.
 Signal SinCos1/co2_1 undriven or does not drive anything - clipped.
 Signal SinCos1/co1_1 undriven or does not drive anything - clipped.
 Signal SinCos1/co0_1 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_inv undriven or does not drive anything - clipped.
-
 Signal SinCos1/rom_addr0_r_7_inv undriven or does not drive anything - clipped.
 Signal SinCos1/co3 undriven or does not drive anything - clipped.
 Signal SinCos1/co2 undriven or does not drive anything - clipped.
 Signal SinCos1/co1 undriven or does not drive anything - clipped.
 Signal SinCos1/co0 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_inv undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_8 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_7 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_6 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_5 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_4 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_3 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_2 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_1 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre undriven or does not drive anything - clipped.
+Signal SinCos1/sinout_pre_9 undriven or does not drive anything - clipped.
 Signal SinCos1/sinout_pre_8 undriven or does not drive anything - clipped.
 Signal SinCos1/sinout_pre_7 undriven or does not drive anything - clipped.
 Signal SinCos1/sinout_pre_6 undriven or does not drive anything - clipped.
@@ -487,8 +744,29 @@ Signal SinCos1/sinout_pre_2 undriven or does not drive anything - clipped.
 Signal SinCos1/sinout_pre_1 undriven or does not drive anything - clipped.
 Signal SinCos1/sinout_pre undriven or does not drive anything - clipped.
 Signal SinCos1/out_sel_i undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_8 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_7 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_6 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_6 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_5 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_5 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_4 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_4 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_3 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_3 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_2 undriven or does not drive anything - clipped.
+
+Signal SinCos1/rom_dout_c_n_2 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_1 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_1 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_s_9 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_s_n_9 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_8 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_s_n_8 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_7 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_s_n_7 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_6 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_n_6 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_5 undriven or does not drive anything - clipped.
@@ -504,7 +782,26 @@ Signal SinCos1/rom_dout_s_n_1 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_s_n undriven or does not drive anything - clipped.
 Signal SinCos1/sinromoutsel undriven or does not drive anything - clipped.
+Signal SinCos1/cosromoutsel undriven or does not drive anything - clipped.
+Signal SinCos1/cosromoutsel_i undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_10 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_11 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_11_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_12 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_12_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_13 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_13_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_14 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_14_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_15 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_15_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_16 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_16_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_17_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_18_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_19 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_1 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_1_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_2 undriven or does not drive anything - clipped.
@@ -515,9 +812,12 @@ Signal SinCos1/rom_dout_4 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_4_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_5 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_5_ffin undriven or does not drive anything - clipped.
+
 Signal SinCos1/rom_dout_6 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_6_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_7 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_7_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_8 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_8_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_9 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_n_7 undriven or does not drive anything - clipped.
@@ -527,8 +827,8 @@ Signal SinCos1/rom_addr0_r_n_4 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_n_3 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_n_2 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_n_1 undriven or does not drive anything - clipped.
-
 Signal SinCos1/rom_addr0_r_n undriven or does not drive anything - clipped.
+Signal SinCos1/mx_ctrl_r_1 undriven or does not drive anything - clipped.
 Signal SinCos1/mx_ctrl_r undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_7 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_6 undriven or does not drive anything - clipped.
@@ -539,21 +839,20 @@ Signal SinCos1/rom_addr0_r_2 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_1 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r undriven or does not drive anything - clipped.
 Signal SinCos1/out_sel undriven or does not drive anything - clipped.
-Signal SinCos1/mx_ctrl_r_1 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_s_9 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_s_n_9 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_9_inv undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_s_n_8 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_s_n_7 undriven or does not drive anything - clipped.
-Signal SinCos1/co4 undriven or does not drive anything - clipped.
-Signal SinCos1/co3_1 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_8 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_7 undriven or does not drive anything - clipped.
-Signal SinCos1/sinout_pre_9 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_9 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_9 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_19_inv undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_8 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_c_n_7 undriven or does not drive anything - clipped.
+Signal SinCos1/co4_1 undriven or does not drive anything - clipped.
+Signal SinCos1/co3_2 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_18 undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_17 undriven or does not drive anything - clipped.
+Signal SinCos1/cosout_pre_9 undriven or does not drive anything - clipped.
 Signal SinCos1/lx_ne0 undriven or does not drive anything - clipped.
 Signal SinCos1/func_or_inet undriven or does not drive anything - clipped.
 Signal SinCos1/func_or_inet_1 undriven or does not drive anything - clipped.
-Signal SinCos1/rom_dout_ffin undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_10_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_15 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_14 undriven or does not drive anything - clipped.
 Signal SinCos1/rom_addr0_r_13 undriven or does not drive anything - clipped.
@@ -570,6 +869,7 @@ Signal MixerI/mco_18 undriven or does not drive anything - clipped.
 Signal MixerI/Multiplier_0_mult_8_2_n1 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_mult_8_2_n0 undriven or does not drive anything -
+
      clipped.
 Signal MixerI/mco_17 undriven or does not drive anything - clipped.
 Signal MixerI/Multiplier_0_mult_8_1_n1 undriven or does not drive anything -
@@ -584,7 +884,6 @@ Signal MixerI/Multiplier_0_mult_8_0_n0 undriven or does not drive anything -
 Signal MixerI/Multiplier_0_mult_6_4_n1 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_mult_6_4_n2 undriven or does not drive anything -
-
      clipped.
 Signal MixerI/mco_15 undriven or does not drive anything - clipped.
 Signal MixerI/mco_14 undriven or does not drive anything - clipped.
@@ -627,6 +926,7 @@ Signal MixerI/co_t_Multiplier_0_3_4 undriven or does not drive anything -
 Signal MixerI/Multiplier_0_pp_4_14 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_pp_4_13 undriven or does not drive anything -
+
      clipped.
 Signal MixerI/co_t_Multiplier_0_3_3 undriven or does not drive anything -
      clipped.
@@ -641,7 +941,6 @@ Signal MixerI/Multiplier_0_pp_4_10 undriven or does not drive anything -
 Signal MixerI/Multiplier_0_pp_4_9 undriven or does not drive anything - clipped.
      
 Signal MixerI/co_t_Multiplier_0_3_1 undriven or does not drive anything -
-
      clipped.
 Signal MixerI/s_Multiplier_0_2_19 undriven or does not drive anything - clipped.
      
@@ -684,6 +983,7 @@ Signal MixerI/Multiplier_0_pp_2_5 undriven or does not drive anything - clipped.
 Signal MixerI/co_Multiplier_0_2_1 undriven or does not drive anything - clipped.
      
 Signal MixerI/s_Multiplier_0_1_19 undriven or does not drive anything - clipped.
+
      
 Signal MixerI/s_Multiplier_0_1_18 undriven or does not drive anything - clipped.
      
@@ -698,7 +998,6 @@ Signal MixerI/s_Multiplier_0_1_15 undriven or does not drive anything - clipped.
 Signal MixerI/co_Multiplier_0_1_6 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_3_16 undriven or does not drive anything -
-
      clipped.
 Signal MixerI/Multiplier_0_pp_3_15 undriven or does not drive anything -
      clipped.
@@ -741,6 +1040,7 @@ Signal MixerI/Multiplier_0_pp_3_9 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_2_10 undriven or does not drive anything -
      clipped.
+
 Signal MixerI/Multiplier_0_pp_2_9 undriven or does not drive anything - clipped.
      
 Signal MixerI/s_Multiplier_0_1_8 undriven or does not drive anything - clipped.
@@ -755,7 +1055,6 @@ Signal MixerI/Multiplier_0_pp_2_8 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_2_7 undriven or does not drive anything - clipped.
      
-
 Signal MixerI/s_Multiplier_0_1_6 undriven or does not drive anything - clipped.
 Signal MixerI/co_Multiplier_0_1_1 undriven or does not drive anything - clipped.
      
@@ -798,6 +1097,7 @@ Signal MixerI/co_Multiplier_0_0_4 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_1_8 undriven or does not drive anything - clipped.
      
+
 Signal MixerI/Multiplier_0_pp_1_7 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_0_8 undriven or does not drive anything - clipped.
@@ -812,7 +1112,6 @@ Signal MixerI/Multiplier_0_pp_1_6 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_1_5 undriven or does not drive anything - clipped.
      
-
 Signal MixerI/Multiplier_0_pp_0_6 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_0_5 undriven or does not drive anything - clipped.
@@ -855,6 +1154,7 @@ Signal MixerI/Multiplier_0_pp_0_11 undriven or does not drive anything -
      clipped.
 Signal MixerI/mfco undriven or does not drive anything - clipped.
 Signal MixerI/Multiplier_0_cin_lr_0 undriven or does not drive anything -
+
      clipped.
 Signal MixerI/rego_o_19 undriven or does not drive anything - clipped.
 Signal MixerI/rego_o_18 undriven or does not drive anything - clipped.
@@ -866,16 +1166,16 @@ Signal MixerI/rego_o_13 undriven or does not drive anything - clipped.
 Signal MixerI/rego_o_12 undriven or does not drive anything - clipped.
 Signal MixerI/rego_o_11 undriven or does not drive anything - clipped.
 Signal MixerI/rego_o_10 undriven or does not drive anything - clipped.
-Signal RFIn_c[9] undriven or does not drive anything - clipped.
-Signal RFIn_c[8] undriven or does not drive anything - clipped.
-Signal RFIn_c[7] undriven or does not drive anything - clipped.
-
-Signal RFIn_c[6] undriven or does not drive anything - clipped.
-Signal RFIn_c[5] undriven or does not drive anything - clipped.
-Signal RFIn_c[4] undriven or does not drive anything - clipped.
-Signal RFIn_c[3] undriven or does not drive anything - clipped.
-Signal RFIn_c[2] undriven or does not drive anything - clipped.
-Signal RFIn_c[1] undriven or does not drive anything - clipped.
+Signal MixerI/rego_o_9 undriven or does not drive anything - clipped.
+Signal MixerI/rego_o_8 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_2_7 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_2_6 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_2_5 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_2_4 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_0_3 undriven or does not drive anything - clipped.
+Signal MixerI/s_Multiplier_0_0_2 undriven or does not drive anything - clipped.
+Signal MixerI/Multiplier_0_pp_0_1 undriven or does not drive anything - clipped.
+     
 Signal LOSine[9] undriven or does not drive anything - clipped.
 Signal LOSine[8] undriven or does not drive anything - clipped.
 Signal LOSine[7] undriven or does not drive anything - clipped.
@@ -897,9 +1197,353 @@ Signal MixerI/Multiplier_0_mult_8_4_n2 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_mult_8_4_n0 undriven or does not drive anything -
      clipped.
+Signal MixerQ/Multiplier_0_mult_8_4_n2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_8_4_n0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_19 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_8_3_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_8_3_n0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_18 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_8_2_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_8_2_n0 undriven or does not drive anything -
+     clipped.
+
+Signal MixerQ/mco_17 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_8_1_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_8_1_n0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_16 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_8_0_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_8_0_n0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_6_4_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_6_4_n2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_15 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_14 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_13 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_12 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_4_4_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_4_4_n2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_11 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_10 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_9 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_8 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_2_4_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_2_4_n2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_7 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_6 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_5 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_4 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_mult_0_4_n1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_mult_0_4_n2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mco_3 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_2 undriven or does not drive anything - clipped.
+Signal MixerQ/mco_1 undriven or does not drive anything - clipped.
+Signal MixerQ/mco undriven or does not drive anything - clipped.
+Signal MixerQ/co_t_Multiplier_0_3_6 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_18 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_17 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_t_Multiplier_0_3_5 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_16 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_15 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_t_Multiplier_0_3_4 undriven or does not drive anything -
+     clipped.
+
+Signal MixerQ/Multiplier_0_pp_4_14 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_13 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_t_Multiplier_0_3_3 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_12 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_11 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_t_Multiplier_0_3_2 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_10 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_4_9 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_t_Multiplier_0_3_1 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/s_Multiplier_0_2_19 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_18 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_17 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_2_8 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_16 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_15 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_2_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_14 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_13 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_2_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_12 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_11 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_2_5 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_10 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_9 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_2_4 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_2_8 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_2_3 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_2_2 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_2_5 undriven or does not drive anything - clipped.
+     
+
+Signal MixerQ/co_Multiplier_0_2_1 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_19 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_18 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_17 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_1_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_16 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_15 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_1_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_16 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_3_15 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/s_Multiplier_0_1_14 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_13 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_1_5 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_14 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_3_13 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_14 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_13 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/s_Multiplier_0_1_12 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_11 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_1_4 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_12 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_3_11 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_12 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_11 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/s_Multiplier_0_1_10 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_9 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_1_3 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_10 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_3_9 undriven or does not drive anything - clipped.
+
+     
+Signal MixerQ/Multiplier_0_pp_2_10 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_9 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_8 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_1_7 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_1_2 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_8 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_2_8 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_2_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_1_6 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_1_1 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_2_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_15 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_14 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_13 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_0_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_12 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_11 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_0_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_12 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_1_11 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/s_Multiplier_0_0_10 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_9 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_0_5 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_10 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_1_9 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_10 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_0_9 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_8 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_0_7 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_0_4 undriven or does not drive anything - clipped.
+
+     
+Signal MixerQ/Multiplier_0_pp_1_8 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_8 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_7 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_6 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_0_5 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_0_3 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_5 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_5 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/s_Multiplier_0_0_4 undriven or does not drive anything - clipped.
+Signal MixerQ/co_Multiplier_0_0_2 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_4 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_3 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_4 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_3 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/co_Multiplier_0_0_1 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_0_2 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_4_19 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mfco_4 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_8 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_3_17 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mfco_3 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_6 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_2_15 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mfco_2 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_4 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_pp_1_13 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mfco_1 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_2 undriven or does not drive anything -
+     clipped.
+
+Signal MixerQ/Multiplier_0_pp_0_11 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/mfco undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/rego_o_19 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_18 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_17 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_16 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_15 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_14 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_13 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_12 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_11 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_10 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_9 undriven or does not drive anything - clipped.
+Signal MixerQ/rego_o_8 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_2_7 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_2_6 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_2_5 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_2_4 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_0_3 undriven or does not drive anything - clipped.
+Signal MixerQ/s_Multiplier_0_0_2 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_pp_0_1 undriven or does not drive anything - clipped.
+     
+Signal RFIn_c[9] undriven or does not drive anything - clipped.
+Signal RFIn_c[8] undriven or does not drive anything - clipped.
+Signal RFIn_c[7] undriven or does not drive anything - clipped.
+Signal RFIn_c[6] undriven or does not drive anything - clipped.
+Signal RFIn_c[5] undriven or does not drive anything - clipped.
+Signal RFIn_c[4] undriven or does not drive anything - clipped.
+Signal RFIn_c[3] undriven or does not drive anything - clipped.
+Signal RFIn_c[2] undriven or does not drive anything - clipped.
+Signal RFIn_c[1] undriven or does not drive anything - clipped.
+Signal LOCosine[9] undriven or does not drive anything - clipped.
+Signal LOCosine[8] undriven or does not drive anything - clipped.
+Signal LOCosine[7] undriven or does not drive anything - clipped.
+Signal LOCosine[6] undriven or does not drive anything - clipped.
+Signal LOCosine[5] undriven or does not drive anything - clipped.
+Signal LOCosine[4] undriven or does not drive anything - clipped.
+Signal LOCosine[3] undriven or does not drive anything - clipped.
+Signal LOCosine[2] undriven or does not drive anything - clipped.
+Signal LOCosine[1] undriven or does not drive anything - clipped.
+Signal MixerQ/VCC undriven or does not drive anything - clipped.
+Signal LOCosine[0] undriven or does not drive anything - clipped.
 Signal RFIn_c[0] undriven or does not drive anything - clipped.
 Signal RFIn[0] undriven or does not drive anything - clipped.
-Signal MixerOutSin[19] undriven or does not drive anything - clipped.
 Signal MixerOutSin[18] undriven or does not drive anything - clipped.
 Signal MixerOutSin[17] undriven or does not drive anything - clipped.
 Signal MixerOutSin[16] undriven or does not drive anything - clipped.
@@ -909,6 +1553,17 @@ Signal MixerOutSin[13] undriven or does not drive anything - clipped.
 Signal MixerOutSin[12] undriven or does not drive anything - clipped.
 Signal MixerOutSin[11] undriven or does not drive anything - clipped.
 Signal MixerOutSin[10] undriven or does not drive anything - clipped.
+
+Signal MixerOutSin[9] undriven or does not drive anything - clipped.
+Signal MixerOutSin[8] undriven or does not drive anything - clipped.
+Signal MixerOutSin[7] undriven or does not drive anything - clipped.
+Signal MixerOutSin[6] undriven or does not drive anything - clipped.
+Signal MixerOutSin[5] undriven or does not drive anything - clipped.
+Signal MixerOutSin[4] undriven or does not drive anything - clipped.
+Signal MixerOutSin[3] undriven or does not drive anything - clipped.
+Signal MixerOutSin[2] undriven or does not drive anything - clipped.
+Signal MixerOutSin[1] undriven or does not drive anything - clipped.
+Signal MixerOutSin[0] undriven or does not drive anything - clipped.
 Signal MixerI/regb_b_9 undriven or does not drive anything - clipped.
 Signal MixerI/regb_b_8 undriven or does not drive anything - clipped.
 Signal MixerI/regb_b_7 undriven or does not drive anything - clipped.
@@ -926,10 +1581,11 @@ Signal MixerI/rega_a_6 undriven or does not drive anything - clipped.
 Signal MixerI/rega_a_5 undriven or does not drive anything - clipped.
 Signal MixerI/rega_a_4 undriven or does not drive anything - clipped.
 Signal MixerI/rega_a_3 undriven or does not drive anything - clipped.
-
 Signal MixerI/rega_a_2 undriven or does not drive anything - clipped.
 Signal MixerI/rega_a_1 undriven or does not drive anything - clipped.
 Signal MixerI/rega_a_0 undriven or does not drive anything - clipped.
+Signal MixerI/Multiplier_0_pp_0_0 undriven or does not drive anything - clipped.
+     
 Signal MixerI/Multiplier_0_pp_1_2 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_2_4 undriven or does not drive anything - clipped.
@@ -938,11 +1594,70 @@ Signal MixerI/Multiplier_0_pp_3_6 undriven or does not drive anything - clipped.
      
 Signal MixerI/Multiplier_0_pp_4_8 undriven or does not drive anything - clipped.
      
+Signal MixerOutCos[18] undriven or does not drive anything - clipped.
+Signal MixerOutCos[17] undriven or does not drive anything - clipped.
+Signal MixerOutCos[16] undriven or does not drive anything - clipped.
+Signal MixerOutCos[15] undriven or does not drive anything - clipped.
+Signal MixerOutCos[14] undriven or does not drive anything - clipped.
+Signal MixerOutCos[13] undriven or does not drive anything - clipped.
+Signal MixerOutCos[12] undriven or does not drive anything - clipped.
+Signal MixerOutCos[11] undriven or does not drive anything - clipped.
+Signal MixerOutCos[10] undriven or does not drive anything - clipped.
+Signal MixerOutCos[9] undriven or does not drive anything - clipped.
+Signal MixerOutCos[8] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[7] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[6] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[5] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[4] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[3] undriven or does not drive anything - clipped.
+
+Signal o_Rx_Byte1[2] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[1] undriven or does not drive anything - clipped.
+Signal o_Rx_Byte1[0] undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_9 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_8 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_7 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_6 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_5 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_4 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_3 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_2 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_1 undriven or does not drive anything - clipped.
+Signal MixerQ/regb_b_0 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_9 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_8 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_7 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_6 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_5 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_4 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_3 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_2 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_1 undriven or does not drive anything - clipped.
+Signal MixerQ/rega_a_0 undriven or does not drive anything - clipped.
+Signal MixerQ/Multiplier_0_pp_0_0 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_1_2 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_2_4 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_3_6 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Multiplier_0_pp_4_8 undriven or does not drive anything - clipped.
+     
 Signal SinCos1/VCC undriven or does not drive anything - clipped.
 Signal SinCos1/GND undriven or does not drive anything - clipped.
+Signal SinCos1/rom_dout_19_ffin undriven or does not drive anything - clipped.
 Signal SinCos1/rom_dout_9_ffin undriven or does not drive anything - clipped.
 Signal CIC1Sin/GND undriven or does not drive anything - clipped.
+Signal CIC1Cos/GND undriven or does not drive anything - clipped.
 Signal MixerI/GND undriven or does not drive anything - clipped.
+Signal MixerQ/GND undriven or does not drive anything - clipped.
+Signal SinCos1/neg_rom_dout_c_n_0_S0 undriven or does not drive anything -
+     clipped.
+Signal SinCos1/neg_rom_dout_s_n_5_S1 undriven or does not drive anything -
+     clipped.
+Signal SinCos1/neg_rom_dout_s_n_5_COUT undriven or does not drive anything -
+     clipped.
 Signal SinCos1/neg_rom_dout_s_n_0_S0 undriven or does not drive anything -
      clipped.
 Signal SinCos1/neg_rom_addr0_r_n_4_S1 undriven or does not drive anything -
@@ -951,155 +1666,330 @@ Signal SinCos1/neg_rom_addr0_r_n_4_COUT undriven or does not drive anything -
      clipped.
 Signal SinCos1/neg_rom_addr0_r_n_0_S0 undriven or does not drive anything -
      clipped.
-Signal SinCos1/neg_rom_dout_s_n_5_S1 undriven or does not drive anything -
-     clipped.
-Signal SinCos1/neg_rom_dout_s_n_5_COUT undriven or does not drive anything -
-     clipped.
-Signal CIC1Sin/d1_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d1_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/un2_count_cry_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal CIC1Sin/un2_count_cry_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal CIC1Sin/N_74 undriven or does not drive anything - clipped.
-Signal CIC1Sin/un2_count_s_15_0_S1 undriven or does not drive anything -
-     clipped.
-Signal CIC1Sin/un2_count_s_15_0_COUT undriven or does not drive anything -
-     clipped.
-Signal CIC1Sin/d2_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d2_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_75 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d2_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d2_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d3_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d3_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_76 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d3_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d3_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d4_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d4_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_77 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d4_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d4_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d5_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d5_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal SinCos1/neg_rom_dout_c_n_5_S1 undriven or does not drive anything -
 
-Signal CIC1Sin/N_78 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d5_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d5_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d6_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d6_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_79 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d6_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d6_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d7_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d7_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_80 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d7_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d7_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d8_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d8_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_81 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d8_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d8_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d9_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d9_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_82 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d9_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d9_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_83 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_1_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_1_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_3_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_3_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_5_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_5_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_7_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_7_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_9_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_9_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_11_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_11_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_13_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_13_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_15_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_15_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_17_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_17_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_19_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_19_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_21_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_21_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_23_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_23_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_25_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_25_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_27_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_27_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_29_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_29_0_S0 undriven or does not drive anything - clipped.
-
-Signal CIC1Sin/d10_1_cry_31_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_31_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_33_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_33_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_35_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_35_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_37_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_37_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_39_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_39_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_41_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_41_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_43_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_43_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_45_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_45_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_47_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_47_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_49_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_49_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_51_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_51_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_53_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_53_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_55_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_55_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_57_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_57_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_59_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_59_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_61_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_61_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_63_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_63_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_cry_65_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_s_71_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d10_1_s_71_0_COUT undriven or does not drive anything - clipped.
-Signal CIC1Sin/d1_1_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal CIC1Sin/d1_1_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal CIC1Sin/N_73 undriven or does not drive anything - clipped.
-Signal MixerI/Multiplier_0_pp_0_1 undriven or does not drive anything - clipped.
+     clipped.
+Signal SinCos1/neg_rom_dout_c_n_5_COUT undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d1_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d1_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
      
+Signal CIC1Sin/un2_count_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/un2_count_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/N_2 undriven or does not drive anything - clipped.
+Signal CIC1Sin/un2_count_s_15_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/un2_count_s_15_0_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d2_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d2_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_3 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d2_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d2_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d3_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d3_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_4 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d3_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d3_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d4_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d4_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_5 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d4_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d4_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d5_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d5_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_6 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d5_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d5_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d6_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d6_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_27 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d6_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d6_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d7_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d7_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_28 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d7_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d7_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d8_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d8_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_29 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d8_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d8_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+
+     
+Signal CIC1Sin/d9_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d9_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_30 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d9_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d9_1_s_59_0_COUT_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/N_31 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d10_1_cry_1_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_1_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_3_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_3_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_5_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_5_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_7_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_7_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_9_0_S1_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_9_0_S0_0 undriven or does not drive anything - clipped.
+     
+Signal CIC1Sin/d10_1_cry_11_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_11_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_13_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_13_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_15_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_15_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_17_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_17_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_19_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_19_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_21_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_21_0_S0_0 undriven or does not drive anything -
+     clipped.
+
+Signal CIC1Sin/d10_1_cry_23_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_23_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_25_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_25_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_27_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_27_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_29_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_29_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_31_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_31_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_33_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_33_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_35_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_35_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_37_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_37_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_39_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_39_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_41_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_41_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_43_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_43_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_45_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_45_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_47_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_47_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_49_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_49_0_S0_0 undriven or does not drive anything -
+     clipped.
+
+Signal CIC1Sin/d10_1_cry_51_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_51_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_53_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_53_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_55_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_55_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_57_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_cry_57_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d10_1_s_59_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d10_1_s_59_0_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Sin/d1_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/d1_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal CIC1Sin/N_1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/un2_count_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal CIC1Cos/un2_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal CIC1Cos/N_1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/un2_count_s_15_0_S1 undriven or does not drive anything -
+     clipped.
+Signal CIC1Cos/un2_count_s_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal CIC1Cos/d1_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d1_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_2 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d1_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d1_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d2_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d2_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_3 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d2_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d2_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d3_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d3_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_4 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d3_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d3_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d4_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d4_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_5 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d4_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d4_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d5_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d5_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_6 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d5_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d5_1_s_59_0_COUT undriven or does not drive anything - clipped.
+
+Signal CIC1Cos/d6_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d6_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_9 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d6_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d6_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d7_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d7_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_10 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d7_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d7_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d8_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d8_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_11 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d8_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d8_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d9_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d9_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_12 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d9_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d9_1_s_59_0_COUT undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/N_13 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_11_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_11_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_13_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_13_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_15_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_15_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_17_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_17_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_19_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_19_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_21_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_21_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_23_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_23_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_25_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_25_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_27_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_27_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_29_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_29_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_31_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_31_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_33_0_S1 undriven or does not drive anything - clipped.
+
+Signal CIC1Cos/d10_1_cry_33_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_35_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_35_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_37_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_37_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_39_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_39_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_41_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_41_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_43_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_43_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_45_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_45_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_47_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_47_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_49_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_49_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_51_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_51_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_53_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_53_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_55_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_55_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_57_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_cry_57_0_S0 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_s_59_0_S1 undriven or does not drive anything - clipped.
+Signal CIC1Cos/d10_1_s_59_0_COUT undriven or does not drive anything - clipped.
 Signal MixerI/t_Multiplier_0_add_3_7_S1 undriven or does not drive anything -
      clipped.
 Signal MixerI/co_t_Multiplier_0_3_7 undriven or does not drive anything -
      clipped.
-Signal MixerI/rego_o_9 undriven or does not drive anything - clipped.
-Signal MixerI/rego_o_8 undriven or does not drive anything - clipped.
 Signal MixerI/Cadd_t_Multiplier_0_3_1_S0 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_add_2_9_S1 undriven or does not drive anything -
      clipped.
 Signal MixerI/co_Multiplier_0_2_9 undriven or does not drive anything - clipped.
      
-Signal MixerI/s_Multiplier_0_2_7 undriven or does not drive anything - clipped.
-Signal MixerI/s_Multiplier_0_2_6 undriven or does not drive anything - clipped.
-
-Signal MixerI/s_Multiplier_0_2_5 undriven or does not drive anything - clipped.
-Signal MixerI/s_Multiplier_0_2_4 undriven or does not drive anything - clipped.
 Signal MixerI/Cadd_Multiplier_0_2_1_S0 undriven or does not drive anything -
      clipped.
 Signal MixerI/Cadd_Multiplier_0_1_8_S1 undriven or does not drive anything -
@@ -1112,8 +2002,6 @@ Signal MixerI/Cadd_Multiplier_0_0_8_S1 undriven or does not drive anything -
      clipped.
 Signal MixerI/Cadd_Multiplier_0_0_8_COUT undriven or does not drive anything -
      clipped.
-Signal MixerI/s_Multiplier_0_0_3 undriven or does not drive anything - clipped.
-Signal MixerI/s_Multiplier_0_0_2 undriven or does not drive anything - clipped.
 Signal MixerI/Cadd_Multiplier_0_0_1_S0 undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_Cadd_8_5_S1 undriven or does not drive anything -
@@ -1121,6 +2009,7 @@ Signal MixerI/Multiplier_0_Cadd_8_5_S1 undriven or does not drive anything -
 Signal MixerI/Multiplier_0_Cadd_8_5_COUT undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_cin_lr_add_8_S1 undriven or does not drive anything -
+
      clipped.
 Signal MixerI/Multiplier_0_cin_lr_add_8_S0 undriven or does not drive anything -
      clipped.
@@ -1154,12 +2043,76 @@ Signal MixerI/Multiplier_0_Cadd_0_5_COUT undriven or does not drive anything -
      clipped.
 Signal MixerI/Multiplier_0_cin_lr_add_0_S1 undriven or does not drive anything -
      clipped.
-
 Signal MixerI/Multiplier_0_cin_lr_add_0_S0 undriven or does not drive anything -
      clipped.
+Signal MixerQ/t_Multiplier_0_add_3_7_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_t_Multiplier_0_3_7 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_t_Multiplier_0_3_1_S0_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_add_2_9_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/co_Multiplier_0_2_9 undriven or does not drive anything - clipped.
+     
+Signal MixerQ/Cadd_Multiplier_0_2_1_S0_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_1_8_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_1_8_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_1_1_S0_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_0_8_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_0_8_COUT_0 undriven or does not drive anything -
+
+     clipped.
+Signal MixerQ/Cadd_Multiplier_0_0_1_S0_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_8_5_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_8_5_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_8_S1_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_8_S0_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_Cadd_6_5_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_6_5_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_6_S1_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_6_S0_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_Cadd_4_5_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_4_5_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_4_S1_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_4_S0_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_Cadd_2_5_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_2_5_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_2_S1_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_2_S0_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_Cadd_0_5_S1_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_Cadd_0_5_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_0_S1_0 undriven or does not drive anything
+     - clipped.
+Signal MixerQ/Multiplier_0_cin_lr_add_0_S0_0 undriven or does not drive anything
+     - clipped.
 Signal OSCH_inst_SEDSTDBY undriven or does not drive anything - clipped.
 Block CIC1Sin/d1_1_axb_0 was optimized away.
-Block MixerI/MixerOutSin[19]/BUF0 was optimized away.
+Block CIC1Cos/d1_1_axb_0 was optimized away.
 Block MixerI/MixerOutSin[18]/BUF0 was optimized away.
 Block MixerI/MixerOutSin[17]/BUF0 was optimized away.
 Block MixerI/MixerOutSin[16]/BUF0 was optimized away.
@@ -1169,6 +2122,17 @@ Block MixerI/MixerOutSin[13]/BUF0 was optimized away.
 Block MixerI/MixerOutSin[12]/BUF0 was optimized away.
 Block MixerI/MixerOutSin[11]/BUF0 was optimized away.
 Block MixerI/MixerOutSin[10]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[9]/BUF0 was optimized away.
+
+Block MixerI/MixerOutSin[8]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[7]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[6]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[5]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[4]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[3]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[2]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[1]/BUF0 was optimized away.
+Block MixerI/MixerOutSin[0]/BUF0 was optimized away.
 Block MixerI/MixerI/regb_b_9/BUF0 was optimized away.
 Block MixerI/MixerI/regb_b_8/BUF0 was optimized away.
 Block MixerI/MixerI/regb_b_7/BUF0 was optimized away.
@@ -1189,15 +2153,64 @@ Block MixerI/MixerI/rega_a_3/BUF0 was optimized away.
 Block MixerI/MixerI/rega_a_2/BUF0 was optimized away.
 Block MixerI/MixerI/rega_a_1/BUF0 was optimized away.
 Block MixerI/MixerI/rega_a_0/BUF0 was optimized away.
+Block MixerI/AND2_t22 was optimized away.
 Block MixerI/AND2_t19 was optimized away.
 Block MixerI/AND2_t16 was optimized away.
 Block MixerI/AND2_t13 was optimized away.
 Block MixerI/AND2_t10 was optimized away.
+Block MixerQ/MixerOutCos[18]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[17]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[16]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[15]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[14]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[13]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[12]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[11]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[10]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[9]/BUF0 was optimized away.
+Block MixerQ/MixerOutCos[8]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[7]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[6]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[5]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[4]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[3]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[2]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[1]/BUF0 was optimized away.
+Block MixerQ/o_Rx_Byte1[0]/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_9/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_8/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_7/BUF0 was optimized away.
+
+Block MixerQ/MixerQ/regb_b_6/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_5/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_4/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_3/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_2/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_1/BUF0 was optimized away.
+Block MixerQ/MixerQ/regb_b_0/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_9/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_8/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_7/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_6/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_5/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_4/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_3/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_2/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_1/BUF0 was optimized away.
+Block MixerQ/MixerQ/rega_a_0/BUF0 was optimized away.
+Block MixerQ/AND2_t22 was optimized away.
+Block MixerQ/AND2_t19 was optimized away.
+Block MixerQ/AND2_t16 was optimized away.
+Block MixerQ/AND2_t13 was optimized away.
+Block MixerQ/AND2_t10 was optimized away.
 Block SinCos1/VCC was optimized away.
 Block SinCos1/GND was optimized away.
+Block SinCos1/triglut_1_0_9 was optimized away.
 Block SinCos1/triglut_1_0_19 was optimized away.
 Block CIC1Sin/GND was optimized away.
+Block CIC1Cos/GND was optimized away.
 Block MixerI/GND was optimized away.
+Block MixerQ/GND was optimized away.
 
      
 
@@ -1213,7 +2226,6 @@ OSC 1:                                     Pin/Node Value
 
 
 
-
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
@@ -1226,54 +2238,9 @@ Instance Name: OSCH_inst
 -------------------------
 
    Total CPU Time: 1 secs  
-   Total REAL Time: 2 secs  
-   Peak Memory Usage: 47 MB
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 57 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
